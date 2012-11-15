@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/*------------------------------------------
+	Sitio:		Multipay
+	Zona:		Sprite Logo
+	Autor:		Christian Pino
+	Versión:	1.0
+------------------------------------------*/
+/* sprite logo */
+.spriteLogoMultipay {
+  float: left;
+  overflow: hidden;
+  font-size: 0;
+  background: url(../images/sprite_logoMultipay.png) 0 0 no-repeat; }
+
+/* tamanos logo */
+.tamMedio {
+  width: 136px;
+  height: 28px;
+  background: url(../images/sprite_logoMultipay.png) 0 0 no-repeat; }
+
+.tamGrande {
+  width: 219px;
+  height: 66px;
+  background: url(../images/sprite_logoMultipay.png) 0 -28px no-repeat; }

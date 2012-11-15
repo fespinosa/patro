@@ -1,0 +1,13 @@
+// Estos estilos se usan sólo para el path "¿Olvidaste tu clave?" para el despliegue de errores.
+
+.errorMsg{
+    width:272px; 
+    height:20px; 
+    padding:0 0 0 16px; 
+    font-size:11px; 
+    color:#c10000; 
+    background:url(/images/bullet_error.gif) 0 2px no-repeat;
+}
+input#emailInput.emailInputError{
+    border:solid 1px #c10000;
+}

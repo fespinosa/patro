@@ -1,0 +1,72 @@
+
+
+/* `HTML basico
+----------------------------------------------------------------------------------------------------*/
+
+body {font: 12px/1.5 'Helvetica', Arial, FreeSans, sans-serif; color:#666}
+pre, code {font-family: 'DejaVu Sans Mono', Menlo, Consolas, monospace}
+hr {border: 0 #ccc solid; border-top-width: 1px; clear: both; height: 0}
+
+
+/* `Titulos
+----------------------------------------------------------------------------------------------------*/
+
+h1 {font-size: 32px; font-weight:bold; color:#c10000; letter-spacing:-0.5px; margin-bottom:0}
+@mixin h2{font-size:28px; font-weight:bold; color:#d68f00; letter-spacing:-0.5px; margin-bottom:0}
+h2 {@include h2}
+h3 {font-size: 21px; font-weight:bold; color:#444; letter-spacing:-0.5px; margin-bottom:0}
+h4 {font-size: 17px; font-weight:bold; color:#666; letter-spacing:-0.5px; margin-bottom:0}
+h5 {font-size:15px; font-weight:bold; color:#666; margin-bottom:0}
+h6 {font-size:13px; font-weight:bold; color:#999; margin-bottom:0}
+
+
+/* `Colores
+----------------------------------------------------------------------------------------------------*/
+
+.rojoCorp {color:#c10000}
+.amarilloOscuro {color:#d68f00}
+.amarilloClaro {color:#faf5be}
+.cafeOscuro {color:#802d04}
+.cafeClaro {color:#e9c784}
+.grisOscuro {color:#231f20}
+.grisMedio {color:#514a4c}
+.grisClaro {color:#b7b7b7}
+.grisMedio {color:#514a4c}
+
+
+/* `Espaciado
+----------------------------------------------------------------------------------------------------*/
+
+ol {list-style: decimal}
+ul {list-style: disc}
+li {margin-left: 30px}
+
+p,
+dl,
+hr,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset,
+figure {margin-bottom: 20px}
+
+
+/* `Alineado
+----------------------------------------------------------------------------------------------------*/
+
+.alignLeft {text-align:left}
+.alignRight {text-align:right}
+.alignCenter {text-align:center}
+.alignJustify {text-align:justify}
+
+
+/* `Links
+----------------------------------------------------------------------------------------------------*/
+
+a {color:#c10000; text-decoration:underline}
+a:hover {color:#900}
+.linkChico {font-size:10px; color:#c10000; text-decoration:underline}
+.linkChico:hover {color:#900}
+

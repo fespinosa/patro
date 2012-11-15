@@ -1,0 +1,83 @@
+/* stylesheet-g.scss */
+body {
+  background-color: #A3A3A3;
+  font-family: Verdana, Helvetica, Sans-Serif;
+  margin: 0;
+  padding: 0;
+  color: #696969; }
+
+a:link, a:visited, a:active {
+  text-decoration: none; }
+
+#content-all-g {
+  width: 100%;
+  display: inline-block; }
+
+#content-center-all-g {
+  width: 900px;
+  background-color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  display: inline-block; }
+
+#small-menu {
+  width: 100%;
+  height: 25px;
+  background-color: #981A3B; }
+
+#content-header {
+  width: 100%;
+  height: 100px;
+  background-color: #AD1D45; }
+
+#content-footer {
+  width: 100%;
+  height: 30px;
+  background-color: #CDCCCC;
+  color: #979696;
+  font-size: 12px; }
+
+#foo {
+  width: 890px;
+  float: left;
+  margin-top: 5px;
+  text-align: left;
+  margin-left: 5px; }
+
+#container-slide {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  margin-top: 5px; }
+
+#container-slide-left {
+  width: 215px;
+  float: left; }
+
+#container-slide-right {
+  width: 680px;
+  height: 351px;
+  background-color: #B49192;
+  float: left; }
+
+#content-menu {
+  width: 100%;
+  height: 49px;
+  background-color: #981A3B; }
+
+#container-category {
+  height: 349px;
+  width: 205px;
+  float: left;
+  margin-left: 5px;
+  border: 1px solid #aaaaaa; }
+
+#general-container {
+  width: 900px;
+  height: 300px;
+  margin-bottom: 5px;
+  background-color: #000000; }
+
+#myCarousel.carousel.slide {
+  height: 351px; }

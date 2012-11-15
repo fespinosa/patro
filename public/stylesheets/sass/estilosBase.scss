@@ -1,0 +1,222 @@
+
+
+/*------------------------------------------
+	Sitio:		Multipay
+	Seccion:	Estilos principales
+	Autor:		Christian Pino
+	Versión:	2.0
+------------------------------------------*/
+
+@import 'reset';
+@import '960';
+@import 'text';
+@import 'div_modal';
+
+/* sprite logo */
+.spriteLogoMultipay {float:left; overflow:hidden; font-size:0; background:url(/images/sprite_logoMultipay.png) 0 0 no-repeat; }
+
+
+/* tamanos logo */
+.tamMedio {width:136px; height:28px; background:url(/images/sprite_logoMultipay.png) 0 0 no-repeat}
+.tamGrande {width:219px; height:66px; background:url(/images/sprite_logoMultipay.png) 0 -28px no-repeat}
+
+/* header */
+#headerCorpWrap {width:100%; height:26px; background:#c9c9c9}
+#btnCorpMC {width:96px; height:26px; float:right; cursor:pointer; background:url(/images/spriteHeaderCorp.png) 0 0 no-repeat}
+#btnCorpMP {width:96px; height:26px; float:right; cursor:pointer; background:url(/images/spriteHeaderCorp.png) -96px 0 no-repeat}
+.headerHome {height:110px}
+.headerHome form {margin:0; padding:0; backgroung:none; float:none}
+#homeLogo {height:66px; margin-top:40px}
+.homeLogoWrap {padding:0 0 0 10px}
+#logoMultipay {width:260px; height:66px; margin:2px 0 0 20px}
+.login {
+  height:78px; 
+  margin-top:26px; 
+  margin-bottom:6px;
+  .saldo{
+    color:#231F20;
+  }
+}
+.loginAyuda {width:300px; height:20px; margin:10px 0 0 0; float:left}
+.saludoLogged {padding:0 40px 0 0}
+
+/* perfil */
+#menuMiMultipayWrap {}
+.menuMiMultipay {width:260px; margin:0 20px 10px 0; background:#eaeaea; border:#d8d8d8 solid 1px}
+.menuMiMultipay h3 {padding:10px 10px 8px 14px; border-bottom:#d8d8d8 solid 1px; text-shadow: 0 1px 1px rgba(255,255,255,1);
+background: #eaeaea;
+background: -webkit-gradient(linear, left top, left bottom, from(#eaeaea), to(#e2e2e2));
+background: -moz-linear-gradient(top,  #eaeaea,  #e2e2e2);
+filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#eaeaea', endColorstr='#e2e2e2');}
+.menuMiMultipay h4 {padding:10px 0 10px 20px; background:url(/images/bullet_flechaRoja.png) 10px 16px no-repeat; text-shadow: 0 1px 1px rgba(255,255,255,1)}
+.menuMiMultipay ul {padding:0 10px 0 10px; margin:0}
+.menuMiMultipay li {margin:0 0 10px 20px; list-style:none}
+.menuMiMultipay li a {text-decoration:none; color:#666}
+.menuMiMultipay li a:hover {text-decoration:none; color:#444}
+.contenido_homeLogged {padding:20px; float:left}
+.contenido_homeLogged table {padding:5px; margin:10px 0 10px 0; background:#f6f6f6}
+.contenido_homeLogged table thead {background:#ccc; font-weight:bold; text-align:center; color:#444; font-size:13px}
+.contenido_homeLogged table tfoot {color:#c10000; font-size:11px}
+.contenido_homeLogged table td {padding:6px 10px 4px 10px; border:#d8d8d8 solid 1px}
+.contenido_homeLogged table .celdaImpar {background:#ebebeb}
+.contenido_homeLogged .listaOLgrande {font-size:20px; font-weight:bold; float:left; color:#c10000}
+.contenido_homeLogged .listaOLgrande p {font-size:12px; font-weight:normal; color:#666}
+.contenido_homeLogged .listaOLgrande ol {list-style:none; font-size:12px; font-weight:normal; color:#666}
+.contenido_homeLogged .listaOLgrande li {margin:20px 0 0 30px}
+.contenido_homeLogged ul.listaULroja,
+.contenido_homeLogged ul.listaULamarilla {margin:0 0 5px 0}
+.contenido_homeLogged ul.listaULroja li {list-style-type:none; margin:0; padding:0 0 0 10px; background:url(/images/bullet_puntoRojo.png) 0 6px no-repeat}
+.contenido_homeLogged ul.listaULamarilla li {list-style-type:none; margin:0; padding:0 0 0 10px; background:url(/images/bullet_puntoAmarillo.png) 0 6px no-repeat}
+.contenido_homeLogged ul.listaULroja li a,
+.contenido_homeLogged ul.listaULamarilla li a  {color:#fff; text-decoration:none}
+.contenido_homeLogged ul.listaULroja li a:hover,
+.contenido_homeLogged ul.listaULamarilla li a:hover {color:#eaeaea}
+.contenido_homeLogged ul.listaULflechaAmarilla {margin:0 0 5px 0}
+.contenido_homeLogged ul.listaULflechaAmarilla li {list-style-type:none; margin:0; padding:0 0 0 14px; background:url(/images/bullet_flechaAmarilla.png) 0 3px no-repeat}
+.contenido_homeLogged ul.listaULtickAmarillo {margin:0 0 5px 0}
+.contenido_homeLogged ul.listaULtickAmarillo li {list-style-type:none; margin:0; padding:0 0 0 15px; background:url(/images/bullet_tickAmarillo.png) 0 7px no-repeat}
+.contenido_homeLogged ul.listaULtickRojo {margin:0 0 5px 0}
+.contenido_homeLogged ul.listaULtickRojo li {list-style-type:none; margin:0; padding:0 0 0 15px; background:url(/images/bullet_tickRojo.png) 0 7px no-repeat}
+.cuadroEditarData {width:680px; float:left}
+.cuadroEditPerfil {padding:25px 10px 10px 10px}
+.datosPerfil {width:100px; margin:0 10px 10px 0; float:left; clear:left; text-align:right; font-weight:bold}
+.datosEditPerfil {width:200px; margin:0 0 10px 0; float:left}
+.datosEditPerfil strong {margin-right:20px; float:right}
+#pay-mediums .disabled {filter:alpha(opacity=50); opacity:0.5}
+#pay-mediums .disabled form a {filter:alpha(opacity=100); opacity:1}
+
+/* contenido Home */
+.bodyBg {background:#e4e4e4 url(/images/bg_body.jpg) center 0 no-repeat}
+.redesSociales {width:55px; height:35px; margin:0; float:right}
+.icoFB {width:22px; height:22px; float:left; margin:5px 10px 0 0; cursor:pointer; background:url(/images/ico_FB.png) 0 0 no-repeat}
+.icoFB:hover {background-position:0 -22px}
+.icoTW {width:22px; height:22px; float:left; margin:5px 0 0 0; cursor:pointer; background:url(/images/ico_TW.png) 0 0 no-repeat}
+.icoTW:hover {background-position:0 -22px}
+#contenidoHome {padding:10px 0 0 0; background:#fff; border:solid 1px #dcdcdc}
+#vitrinaHomeWrap {width:620px; height:345px; float:left; background:url(/images/vitrina_sombra.jpg) 0 335px no-repeat}
+#vitrinaHome {width:615px; height:330px; background:#fff; padding:2px; border:solid 1px #e3e3e3}
+.bannerHome {width:185px; height:127px; padding:21px 99px 0 16px; float:left; margin-bottom:0}
+.bannerHome_sombra {width:300px; height:14px; margin-top:-1px; float:left; background:url(/images/bg_bannerHome_sombra.png) 0 0 no-repeat}
+.bannerHome h3 {padding:0 0 0 13px; float:left; font-size:20px; background:url(/images/bullet_flechaAmarilla.png) 0 5px no-repeat}
+.bannerHome p {margin:20px 0 0 0; float:left}
+#bannerHome_1 {width:300px; height:148px; margin-top:15px; margin-right:20px; float:left; background:url(/images/bg_bannerHome_1.jpg) 0 0 no-repeat}
+#bannerHome_2 {width:300px; height:148px; margin-top:15px; float:left; background:url(/images/bg_bannerHome_2.jpg) 0 0 no-repeat}
+
+/* footer */
+.footer {background:url(/images/bg_footer.jpg) 0 0 no-repeat}
+.footerColumna {height:174px; width:280px; padding:20px 0 0 20px}
+.footerTitulo {width:280px; height:30px; float:left}
+.footerTitulo h1 {font-size:18px; letter-spacing:-0.2px; text-shadow:0px 0px 2px #000}
+.footerColumna ul {width:280px; height:103px; float:left; margin:0 0 5px 0}
+.footerColumna ul.listaAmarilla li {list-style-type:none; margin:0; padding:0 0 0 10px; background:url(/images/bullet_puntoAmarillo.png) 0 6px no-repeat}
+.footerColumna ul li {list-style-type:none; margin:0; padding:0 0 0 10px; background:url(/images/bullet_puntoRojo.png) 0 6px no-repeat}
+.footerColumna ul li a {color:#fff; text-decoration:none}
+.footerColumna ul li a:hover {color:#eaeaea}
+.footerCierre {height:32px; font-size:10px; color:#fff; background:url(/images/bg_footerCierre.jpg) 0 0 repeat}
+.footerCierre div {padding:10px 20px 0 10px}
+.footerCierre a {color:#999}
+.footerCierre a:hover {color:#666}
+.footerColumna h3 {float:left; margin:5px 10px 0 0; font-size:14px; font-weight:bold; color:#b1b1b1}
+.icoPlayStore {width:129px; height:45px; float:left; margin:0 10px 0 0; cursor:default}
+.icoAppleStore {width:130px; height:45px; float:left; margin:0; cursor:default; background:url(/images/ico_appleStore.png) 0 0 no-repeat}
+
+/* formulario registro home */
+#registroHome form {margin:0; padding:0; background:none; float:none}
+.inputText {height:16px; padding:4px 2px 3px 2px; float:left; margin:0 10px 0 0; background:#fff; color:#666; border:solid 1px #d1d1d1; border-radius:3px; -ms-border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; -khtml-border-radius:3px}
+.inputTextError {border:solid 1px #c10000}
+.inputText:-webkit-input-placeholder {color:#b0b0b0}
+.inputText:-moz-placeholder {color:#b0b0b0}
+#registroHome label {float:left; clear:both; font-size:12px; font-weight:bold; color:#231f20; margin:8px 0 0 0}
+#registroHome .campoError {width:272px; height:20px; padding:0 0 0 16px; font-size:11px; color:#c10000; background:url(/images/bullet_error.gif) 0 2px no-repeat}
+#registroHome .campoErrorRegistroHome {position:absolute; top:0; left:0; margin:465px 0 0 24px}
+.bulletInfo {width:16px; height:16px; float:left; margin:9px 10px 0 0}
+#registroHome .btn_registro {width:119px; height:32px; float:left; border:none;margin:33px 0 0 122px; background:url(/images/btn_registrate.png) 0 0 no-repeat; cursor:pointer}
+#registroHome .btn_registro:hover {background-position:0 -32px}
+.btn_registroSubtexto {float:left; margin:0 0 0 128px; font-size:11px}
+
+/* botones */
+.btn_ir {width:25px; height:25px; float:left; background:url(/images/btn_ir.png) 0 0 no-repeat; cursor:pointer; border:none; font-size:0px}
+.btn_ir:hover {background-position:0 -25px}
+.btn_continuar {width:111px; height:26px; float:right; background:url(/images/btn_continuar.png) 0 0 no-repeat; cursor:pointer; border:none; font-size:0px}
+.btn_continuar:hover {background-position:0 -26px}
+.editar {width:30px; height:16px; padding:0 0 0 18px; margin:0 0 0 10px; float:left; display:block; background:url(/images/ico_editar.gif) 0 0 no-repeat; font-size:11px}
+/*.tooltip {background-color:#000; border:1px solid #fff; padding:10px 15px; width:200px; display:none; color:#fff; text-align:left; font-size:12px; -moz-box-shadow:0 0 10px #000; -webkit-box-shadow:0 0 10px #000} */
+
+/* quienes somos */
+.contenido_estatico .columna_2-3 .fotoDirectorio {width:120px; height:190px; float:left; margin:10px 0 0 20px; text-align:center}	  	
+.contenido_estatico .columna_2-3 .fotoDirectorio p {margin:10px 0 0 0; text-align:left; font-size:11px}	  	
+.contenido_estatico .columna_2-3 .fotoDirectorio p a {}
+
+/* como funciona */
+.comoFuncionaColTextos {width:460px; margin-right:10px; float:left}
+.comoFuncionaPaso {width:405px; padding:18px 10px 1px 14px; margin-bottom:10px; float:left; cursor:pointer}
+.comoFuncionaPaso:hover {background:#f6f6f6}
+.comoFuncionaPaso.activo {background:#ebebeb}
+.comoFuncionaFlechaPaso {width:30px; margin-bottom:10px; float:left}
+#comoFuncionaFlechaPaso_1 {height:107px}
+#comoFuncionaFlechaPaso_1.activo {background:url(/images/img_flechaPaso_1.gif) 0 0 no-repeat}
+#comoFuncionaFlechaPaso_2 {height:124px}
+#comoFuncionaFlechaPaso_2.activo {background:url(/images/img_flechaPaso_2.gif) 0 0 no-repeat}
+#comoFuncionaFlechaPaso_3 {height:199px}
+#comoFuncionaFlechaPaso_3.activo {background:url(/images/img_flechaPaso_3.gif) 0 0 no-repeat}
+#comoFuncionaFlechaPaso_4 {height:88px}
+#comoFuncionaFlechaPaso_4.activo {background:url(/images/img_flechaPaso_4.gif) 0 0 no-repeat}
+#comoFuncionaFlechaPaso_5 {height:89px}
+#comoFuncionaFlechaPaso_5.activo {background:url(/images/img_flechaPaso_5.gif) 0 0 no-repeat}
+.comoFuncionaColFotos {width:380px; padding-left:30px; float:left}
+.comoFuncionaSlide {width:380px; height:232px; float:left; margin-bottom:5px; overflow:hidden; position:relative}
+.comoFuncionaSlide img {position:absolute; top:0; left:0}
+ul.comoFuncionaUI {width:80px; height:20px; margin:0 auto; list-style:none}
+ul.comoFuncionaUI li {width:11px; height:11px; float:left; margin:2px; text-indent:-9999px; background:url(/images/ui_punto.png) 0 0 no-repeat; cursor:pointer}
+ul.comoFuncionaUI li:hover {background-position:0 -11px}
+ul.comoFuncionaUI li.activo {background-position:0 -22px}
+
+/* transacciones */
+.seccion {padding:20px; margin-bottom:20px; background:#ebebeb}
+.seccion .campo {width:520px; height:20px}
+.seccion .campo .descripcion {width:210px; height:20px; float:left; font-weight:bold}
+.seccion .campo .value {width:310px; height:20px; float:left}
+
+/* mensajes de error */
+.error_messages {padding:5px; margin:10px 0 10px 0; background:#fff; color:#c10000; border:#c10000 solid 1px; border-radius:3px; -ms-border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; -khtml-border-radius:3px;
+  h2 { 
+    display: block;
+    margin-bottom: 0;
+  }
+  & > p {
+    margin:5px !important;
+    margin-left:0 !important; 
+  }
+  li{list-style-type:none; margin:0}
+  & > ul {
+    margin-bottom: 0;
+    clear:both;
+  }
+  li.attribute{
+    h5 {list-style-type:none; margin:0; padding:0 0 0 18px; background:url(/images/bullet_error.gif) 0 4px no-repeat}
+    ul.attributeErrors{
+      margin-bottom:10px;
+      li {
+            padding:0 0 0 18px;
+      }
+    }
+  }
+}
+
+// Estilos para flujo de abono desde pago. 
+
+/* otros varios genericos*/
+.linkDiv {width:100%; height:100%; display:block; font-size:0px; font-size-adjust:0}
+.breadcrumbs {padding:0 0 0 40px; font-size:11px}
+.breadcrumbs a {text-decoration:none}
+.linkVolverPie {display:block; margin:40px 0 0 0; clear:left;}
+.floatLeft {float:left}
+.floatRight {float:right}
+.alignLeft {text-align:left}
+.alignRight {text-align:right}
+.alignCenter {text-align:center}
+.alignJustify {text-align:justify}
+
+
+
+

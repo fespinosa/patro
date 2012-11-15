@@ -1,0 +1,104 @@
+@import 'colors';
+@import 'global';
+@import 'text';
+
+/**************************************/
+/************ Tooltips ****************/
+/**************************************/
+
+.image-tip {
+	position: relative;
+	img {
+		position:absolute;
+	}
+}
+
+a.text-tip{
+	border-bottom: 1px dashed;
+	text-decoration: none;
+	cursor: help;
+}
+
+/**************************************/
+/************ Utils *******************/
+/**************************************/
+
+@mixin big-title{
+	color: #C25D60;
+	display: inline-block;
+	font-size: 24px;
+	height: 30px;
+	line-height: 30px;
+
+	font-weight: bold;
+}
+
+@mixin cuadro {
+	font-family: helvetica; 
+  color: #222;
+  border:1px solid #ccc;
+  background-color: #F3F3F3;
+  padding-bottom:0px;
+  padding-top:0px;
+  margin-bottom: 15px;
+	clear: both;
+}
+
+@mixin cuadro-title{
+	background-color: #F3F3F3; 
+  font-family:Helvetica;
+  font-size:12px;
+  font-weight:bold;
+	height: auto;
+	padding: 14px;
+	line-height: 100%;
+	color:black;
+	margin: 0;
+}
+
+@mixin cuadro-content {
+	padding: 1.2em;
+  background: #EBEBEB;
+  border-top: 1px solid #CCC;
+}
+
+.cuadro{ @include cuadro }
+.cuadro-title { @include cuadro-title } 
+.cuadro-content { @include cuadro-content }
+
+.big-title{
+	@include big-title;
+}
+
+div {
+  &.cuadro, &.cuadro-light {
+		@extend .cuadro;
+    h2 {
+			@extend .cuadro-title;
+    }
+    div.content{
+      @extend .cuadro-content;
+    }
+  }
+}
+
+
+/**************************************/
+/************ Parrafos ****************/
+/**************************************/
+
+.info-experto{
+  color:black;
+  font-weight:normal;
+}
+
+.info-inexperto{
+  color:gray;
+  font-weight:normal;
+}
+
+/**************************************/
+/************ Plug-ins ****************/
+/**************************************/
+
+@import 'div_modal';

@@ -1,0 +1,816 @@
+@import 'common';
+@import 'forms';
+@import 'flash_messages';
+@import 'footer';
+@import 'deposits';
+@import 'images';
+@import 'abono';
+
+body.pago {
+	
+//	Para todas las vistas de pago
+	#container {
+		margin: 20px auto;
+	}
+	h2 {
+    color: $red; 
+		margin-top: 0;
+    font: {
+      size: 24px;
+      weight: bold;
+    }
+  }
+	#logo-comercio{
+		font-size: 10px;
+		font-variant: small-caps;
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+	#product {
+		margin-top:0;
+		padding-top:15px;
+	}
+	#abort-payment {
+		clear:both;
+		margin-top: 10px;
+		padding-top: 10px;
+		text-align: center;
+	}
+	img.help-tip {
+		background: url(/images/question_mark.gif) center no-repeat;
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 5px;
+	}
+	.box {
+		padding: 10px 15px 15px 13px;
+		background:  #F3F3F3;
+		overflow: auto;
+		overflow-x:	hidden;
+		.light {
+			color: gray;
+			font-weight: normal;
+		}
+	}
+	#flash{
+		width: 914px;
+	}
+	
+//	Wizard de pago
+	
+	ol#wizard {
+		overflow: auto;
+		padding: 0;
+		width: 700px;
+		margin: 30px auto;
+		li {			
+			text-align: center;
+			width: 100 px;
+			float: left;
+			padding-right: 80px;
+			h3 {
+				font-size: 24px;
+				color: #aaa;
+				display: block;
+			} 
+			p {
+				color: #aaa;
+			}
+			&.last {
+				padding-right: 0;
+			}
+			&.active {
+				h3, p {
+					color: black;
+				}
+			}
+			&.done {
+				
+			}
+		}
+	}
+	
+	#content {
+		position: relative;
+	  border:2px $gray solid;
+	  padding: 10px 20px 10px;
+		#logo-multipay {
+			float: right;
+			margin-top: 10px;
+		}
+		#user-data {
+			margin-bottom: 1em;
+		}
+		
+//	Vista:	Previous Options
+		ul#available-mediums {	
+			padding: 0px 0px;
+			.boton{
+				min-width: 160px;
+			}
+			a.boton {
+				padding:0 7px;
+			}
+			li {
+				margin-bottom: 10px;
+				&.error{
+					color: #333;
+					background: #FFDCDC;
+					border: 1px dashed #BC0000;
+					.error_msg {
+						font-weight: bold;
+						color: #BC0000;
+						float:right;
+					}
+				}
+			}
+		}
+		
+//  Vista: Receive 
+		.auth_error{
+			font-size: 1em;
+		}
+//	Vista: Media Choice	
+		ul#pay-mediums {
+			margin: 10px 0;
+			background: white;
+			padding: 10px;
+			li {
+				position: relative;
+				color: black;
+				padding: 10px;
+				overflow: hidden;
+				&:hover{
+					background: #F3F3F3;
+				}
+				.title {
+					float:left;
+				}
+				div.tip {
+					clear:both;
+					display: none;
+				}
+				div.error_msg{
+	 				display: none;
+				}
+				&.enabled{
+					
+				}
+				&.disabled *{
+					color: $light-text;
+					.text-tip {
+						font-style: italic;
+
+					}
+				}
+				.sort-handle {
+					cursor: move;
+					display:none;
+					position: absolute;
+					width: 50px;
+					top: 10px;
+					right: 0px;
+					height: 30px;
+					background: url(/images/icons/reorder-light.png) no-repeat center center;
+					text-indent: -1000px;
+				}
+				&:hover {
+					.sort-handle {
+						display:block;
+						&:hover{
+							background: url(/images/icons/reorder.png) no-repeat center center;
+						}
+					}
+				}
+				&.error{
+					div.error_msg {
+						display: block;
+						float: right;
+						color: $red;
+					}
+				}
+			}
+		}
+		
+//		Vista Validation Identity
+		ul#validation-methods{
+			li{
+				img{
+					padding-top:8px;
+					background:none;
+				}
+				&:not(:first-child){
+					padding-top: 10px;
+				}
+				&:not(:last-child){
+					padding-bottom: 5px;
+					height:34px;
+					form{
+						margin-right:3px;
+						float:left;
+						#inXML{
+							height:32px;							
+							border:1px solid #900;
+						}
+					}
+				}
+				:last-child{
+					overflow:hidden;
+					padding-bottom: 5px;
+				}
+				h3{
+					display:block;
+				}
+				.boton{
+					margin: 0px;
+				}
+			}
+		}
+		
+//		Vista nserie validation
+		#nserie-validation{
+			@include cuadro;
+			padding: 20px;
+		}
+		
+//		Vista payment Add Credits 
+		#payment-add-credits{
+			form{
+				ul{ padding: 0;}
+				h3 {
+					margin: 10px 20px 10px 0;
+					font-weight: bold;					
+				}
+				li {
+					margin: 0;
+					label {
+						margin-left: 20px;
+						width: 150px;
+						float: left;
+					}
+					height: 35px;
+					line-height: 35px;
+				}
+				ul#transfer-instructions {
+					padding-bottom: 20px;
+					li {
+						height: 17px;
+						padding: 0 20px;
+					}
+				}
+			}
+		}
+		
+//		Vista payment Waiting Deposit
+		#payment-waiting-deposit{
+			ul#transfer-instructions{
+				width:350px;
+				margin: 0 auto;
+			}
+		}		
+		
+		//Vista Voucher exitoso		
+		#payment-voucher{
+			h2 {
+				@extend .cuadro-title;
+			}
+			ul#payment-data {
+				background: url(/images/pago/pago_realizado.png) no-repeat scroll right top;
+				margin-bottom: 25px;
+				li {
+			    color: #333333;
+    			margin-bottom: 3px;
+					&#footer-voucher {
+						margin-top: 20px;
+						padding-top: 20px;
+						border-top: 1px solid #333 ;
+						font-size: 10px;
+						text-align: left;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+//Estilos antiguos
+
+#logo {
+  background:url(../../../images/mplogo.png) no-repeat 0 30px;
+  height:38px;
+  padding:20px 0;
+}
+#logomp {
+  margin:60px 0 5px 0;
+  img {
+    float:right;
+  }
+}
+#session {
+  text-align:center;
+  background:$gray;
+  padding: {
+    top:50px;
+    bottom:50px;
+    }
+  font-weight:bold;
+  p {
+    color: #000000;
+  }
+}
+#pago {
+  border:2px $gray solid;
+  padding:10px 10px 0;
+  .mkt {
+    p {
+      font-size: 15px;
+      color: #139527;
+    }
+    ul {
+      li {
+        float:left;
+      }
+    }
+  }
+  .lista {
+    .mostrar.mediums{
+     li {
+        span{
+          display:block;
+          padding: 1em;
+        }
+        &:hover {
+          background-color: $gray;
+        }
+    }
+    .mostrar {
+
+      .tip_content {
+        li {
+          height: auto;
+        }
+      }
+    }
+  }
+    .ordenable {
+      li {
+        &:hover {
+          background: $gray;
+          cursor: move !important;
+        }
+      }
+    }
+    margin:10px 0;
+    padding: 10px;
+    background: #FFFFFF;
+    h6 {
+      margin-bottom:0px;
+    }
+    .tip_content {
+      li {
+        a {
+          text-decoration: underline;
+          font-weight: bold;
+          color: #335998;
+          &:hover {
+            color: $red;
+          }
+        }
+      }
+    }
+    li {
+      background-color: #FFFFFF;
+      color: #000000;
+      i {
+        color: #808080;
+      }
+      a {
+        text-decoration:none;
+        color: #666;
+        padding:6px;
+        display:block;
+        &.edit {
+          color: #335998;
+          text-decoration:underline;
+          background:none;
+          display: inline;
+          padding:0;
+          &:hover {
+            color:#bf0000;
+          }
+        }
+        &.condition {
+          display:inline-block;
+          color: #335998;
+          text-decoration: underline;
+          float:right;
+          &:hover {
+            color: $red;
+          }
+        }
+      }
+      li {
+        background-color: $gray !important;
+        &.tipy {
+          background: transparent !important;
+        }
+      }
+    }
+  }
+  li {
+    background:$gray;
+    margin-bottom:15px;
+    padding:10px;
+    float:left;
+    .mediopago {
+      float:left;
+      padding:10px 10px 10px 0;
+    }
+    .cupon {
+      p {
+        font-weight:normal;
+        margin-top:15px;
+      }
+      li {
+        color:#000;
+        ul {
+          margin-top:15px;
+          padding-left:15px;
+          li {
+            padding:5px 0;
+            list-style:circle outside;
+          }
+        }
+      }
+      .titulo {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        b {
+          color:#bc0000;
+        }
+      }
+      .subtitle {
+        background:#fff;
+        display:block;
+        height: 40px;
+        line-height: 40px;
+        float:left;
+        text-indent:20px;
+      }
+    }
+    
+    li {
+      padding:0;
+      margin-bottom:0;
+      float:none;
+      p {
+        font-weight:bold;
+      }
+      &.desglose {
+        background:url('../images/pago/pago_realizado.png') no-repeat scroll center right #E6E6E6;
+        padding:10px;
+        margin-bottom: 25px;
+        li {
+          background:transparent;
+          color: #000000;
+        }
+        p {
+          margin-bottom:0;
+        }
+      }
+    }
+  &.profile {
+    margin-bottom:0;
+    background:#FFFFFF;
+    padding:20px;
+    ul {
+      padding-left:0px;
+    }
+    li {
+      background:#FFFFFF;
+      p {
+        margin-bottom:0;
+        color:#000000;
+      }
+      span {
+        color:#000000;
+      }
+    }
+  }
+  }
+  a {
+    &.edit {
+      display:inline;
+      background:url(../images/pago/ico_edit.jpg) no-repeat;
+      display: inline-block;
+      height: 20px;
+      text-indent: 30px;
+    }
+  }
+  ul.mediums{
+    a.add_new_medium {
+      text-indent: 0px;
+      color: #335998;
+      text-decoration: underline;
+    }
+  }
+  .title {
+    float: left;
+    height: 30px;
+    padding: 0;
+    background: none;
+    h2 {
+      color: $red;
+      display:inline;
+      font: {
+        size:24px;
+        weight:bold;
+      }
+    }
+    img {
+      float:right;
+      margin: 11px 17px;
+    }
+  }
+  form {
+    li {
+      padding:0;
+      margin-bottom:0px;
+      small {
+        display:none;
+        background:url(../../../images/pago/bg_alert.png) no-repeat;
+        color:#990000;
+        font-size:11px;
+        text-indent:30px;
+      }
+      &.error {
+        small {
+          display:block;
+        }
+        input {
+          background: #f99;
+          border:1px solid #990000;
+          color: #AC2025;
+        }
+      }
+    }
+    &#login li {
+      margin-bottom:0px;
+      &:last-child {
+        margin-bottom:0;
+      }
+      li {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+#anular a {
+  padding:5px 15px;
+}
+#alert {
+  background:#FF9999;
+  border:2px solid #c33;
+  margin-bottom:15px;
+  padding:10px;
+  line-height:50px;
+  img {
+    float:left;
+  }
+  p {
+    color:#950F0F;
+    float:left;
+    margin-bottom:0;
+    text-indent:147px;
+    font: {
+      size:15px;
+    }
+  }
+}
+
+#product {
+  margin-top:50px;
+  h4 {
+    color: $red;
+    font: {
+      size: 24px;
+      weight: bold;
+    }
+  }
+  p {
+    color:#000000;
+    font: {
+      weight: bold;
+      size: 13px;
+    }
+  }
+}
+.tip_content {
+  background: none repeat scroll 0 0 $gray;
+  display: none;
+  position:absolute;
+  top:200px;
+  p {
+    margin-bottom: 0;
+  }
+  h6 {
+    margin-bottom:0px;
+  }
+  ul {
+    padding-bottom: 0;
+    border: 1px solid #666666;  
+    padding: 15px;
+    ul {
+      border:  none;  
+      padding: 0px;
+      li {
+        list-style:url("../images/icon_flecha.gif") outside;
+        margin-left: 15px;
+      }
+      padding-bottom:15px;
+      &.mail {
+        padding-bottom:0;
+      }
+    }
+  }
+  .close {
+    cursor: pointer;
+    float:right;
+  }
+}
+.tip_content_fix {
+  background: none repeat scroll 0 0 $gray;
+  display: none;
+  position:absolute;
+  margin-top:-45px;
+  margin-left:-300px;
+  width:280px;
+  .tipy {
+    position: absolute;
+    width: 90%;
+    text-align:right;
+    background:transparent !important;
+    display: table;
+    margin-top:-11px;
+    right: -20px;
+    
+  }
+  p {
+    margin-bottom: 0;
+  }
+  h6 {
+    margin-bottom:0px;
+  }
+  ul {
+    padding-bottom: 0;
+    border: 1px solid #666666;  
+    padding: 15px;
+    ul {
+      border:  none;  
+      padding: 0px;
+      li {
+        list-style: circle outside;
+        margin-left: 15px;
+      }
+      padding-bottom:15px;
+      &.mail {
+        padding-bottom:0;
+      }
+    }
+  }
+  .close {
+    cursor: pointer;
+    float:right;
+  }
+}
+.tip_content_help {
+  background: none repeat scroll 0 0 $gray;
+  border: 1px solid #666666;
+  margin-left: 236px;
+  margin-top: 72px;
+  padding: 15px;
+  display:none;
+  position: absolute;
+  width: 300px;
+  p {
+    margin-bottom: 0;
+  }
+  h6 {
+    margin-bottom:0px;
+  }
+  ul {
+    padding-bottom: 0;
+    ul {
+      padding-bottom:15px;
+      &.mail {
+        padding-bottom:0;
+      }
+    }
+  }
+  .tipy {
+    position: absolute;
+    width: 90%;
+    text-align:center;
+    background:transparent !important;
+    display: table;
+    margin-top:-36px;
+    img {
+    }
+  }
+  .close {
+    cursor: pointer;
+    float:right;
+  }
+}
+.help {
+  float:left;
+}
+#logof {
+  font-size: 30px;
+  font-variant: small-caps;
+  font-weight: bold;
+  margin-bottom:10px;
+  img {
+    width: 300px;
+  }
+}
+.black {
+  color: #000000 !important;
+}
+.error {
+  background: none repeat scroll 0 0 #FFDADA;
+  border: 1px dashed #990000;
+//  border-radius: 10px 10px 10px 10px;
+//  margin: 25px 0;
+//  padding: 15px;
+//  text-align: center;
+  h1 {
+    color: #990000;
+  }
+}
+.message {
+  color:#BC0000;
+  margin-bottom:0;
+  text-align:center;
+}
+.ui-state-error {
+  background:#BC0000;
+}
+
+.center {
+  text-align:center;
+}
+.ayuda_medio_pago {position:absolute;}
+/**********************************************/
+/**************   FORMULARIOS	***************/
+/**********************************************/
+
+form div.auth_error {
+	color: #C25D60;
+	font-size:0.9em;
+}
+.veriseal {
+  display: block;
+  height: 100px;
+  padding: 0 186px;
+}
+a.edit {
+  display:inline;
+  background:url(../images/pago/ico_edit.jpg) no-repeat 6px 10px;
+  display: inline-block;
+  height: 30px;
+  text-indent: 30px;
+  color:#335998;
+  font-size:12px;}
+  a.edit:hover {
+    color:#BC0000;
+  }
+
+//Errores de Ruby
+.error_messages {
+  background: #FFDCDC;
+  color:#bc0000;
+  border: 1px dashed #BC0000;
+  padding:10px;
+  h2 {
+    display:none;
+  }
+}
+#pago .error_messages li {
+  background:#FFDCDC;
+  height:auto;
+}
+.field_with_errors {
+  background: #FFDCDC;
+  border: 1px dashed #BC0000;
+  color:#bc0000;
+  float:left;
+}
+
+/* parche para boton */
+#Acceder.btn_ir {width:25px; height:25px; float:left; background:url(/images/btn_ir.png) 0 0 no-repeat; cursor:pointer; border:none; font-size:0px}
+#Acceder.btn_ir:hover {background-position:0 -25px}
+
+

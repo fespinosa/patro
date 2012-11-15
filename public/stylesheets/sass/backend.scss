@@ -1,0 +1,457 @@
+/*backend*/
+
+@import 'footer';
+@import 'flash_messages';
+
+body {
+  background-color: #f3f3f3 !important; }
+
+div#header {
+  color: #547AA5;
+  height: 140px; }
+
+#header_inner {
+  background: url("/images/fondos/bg_home_header.png") repeat-x scroll 0 0 transparent; }
+
+div#hack_fondo {
+  background: url("/images/fondos/bg_home_header.png") repeat-x scroll 0 0 transparent;
+  border-bottom: 4px solid #547AA5;
+  float: right;
+  height: 54px;
+  padding: 18px 30px 0 30px;
+  position: relative;
+  text-align: right;
+  z-index: 3;
+  position: absolute;
+  right: 0;
+  a {
+    color: #c00000;
+    display: block; } }
+
+h1#multipay_logo {
+  background: url("/images/mplogo.png") no-repeat scroll 42px 29px transparent;
+  border-bottom: 4px solid #547AA5;
+  color: #547AA5;
+  font-size: 33px;
+  height: 72px;
+  line-height: 72px;
+  margin: 0;
+  overflow: hidden;
+  text-indent: 280px; }
+
+ul#menu {
+  background: url("/images/fondos/bg_primaryNav.png") repeat-x scroll right top transparent;
+  clear: both;
+  margin: 0;
+  height: 40px;
+  list-style: none outside none;
+  li {
+    &.selected_menu_item {
+      float: left;
+      font-size: 1em;
+      font-weight: normal;
+      border: 0 none;
+      list-style: none outside none;
+      margin: 0;
+      padding: 0; }
+    &.menu_item {
+      float: left;
+      font-size: 1em;
+      font-weight: normal;
+      border: 0 none;
+      list-style: none outside none;
+      margin: 0;
+      padding: 0;
+      background: url("/images/fondos/bg_menuli.jpg") repeat-x;
+      border-bottom: 1px solid #ddd;
+      &:first-child {
+        border-left: 1px solid #ddd; }
+      &:last-child {
+        border-right: 1px solid #ddd; } }
+    &.selected_menu_item {
+      background: url("/images/fondos/bg_primaryNavHover.gif") repeat-x scroll 0 0;
+      color: #fff; }
+    &.menu_item a {
+      &:hover {
+        background: url("/images/fondos/bg_primaryNavHover.gif") repeat-x scroll 0 0;
+        color: #fff; }
+      display: block;
+      font-size: 1.5em;
+      line-height: 1.5em;
+      margin: 0;
+      padding: 0.3em 1.5em;
+      position: relative;
+      text-decoration: none; }
+    &.selected_menu_item a {
+      display: block;
+      font-size: 1.5em;
+      line-height: 1.5em;
+      margin: 0;
+      padding: 0.3em 1.5em;
+      position: relative;
+      text-decoration: none; }
+    &.menu_item a {
+      color: #333; }
+    &.selected_menu_item a {
+      color: #fff; } } }
+
+div {
+  &#container {
+    margin-left: 40px;
+    margin-bottom: 15px; }
+  
+    p {
+      margin: 0.3em 0; }
+    span {
+      float: left;
+      margin: 0.1em 0.5em 0 0.5em; } 
+}
+
+tr.par {
+  background-color: #B6F18D; }
+
+div {
+  &.pagination {
+    font-size: 1.2em;
+    margin: 0 0 1em 0; }
+  &#controles {
+    height: 3em; } }
+
+form div {
+  &.grupoCampos {
+    float: left; }
+  &.campo label {
+    white-space: nowrap;
+    display: inline-block;
+    width: 9em;
+    margin-left: 2em; }
+  &.botonera {
+    clear: both;
+    float: right;
+    margin-bottom: 10px;
+    margin: 10px;
+    input, a {
+      float: right; } } }
+
+table#lista {
+  table-layout: fixed;
+  border: 1px solid #436283;
+  tr {
+    background: #547AA5;
+    color: #fff; }
+  td {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid #C5C8A4; }
+  th {
+    border-right: 1px solid #436283;
+    text-align: center;
+    font-size: 1.2em;
+    height: 40px; }
+  tr {
+    &.par {
+      border-bottom: 1px solid #C5C8A4;
+      color: #436283; }
+    &.impar {
+      border-bottom: 1px solid #C5C8A4;
+      color: #436283;
+      background: #E5E6D6; }
+    &.par {
+      background: #DCE0A7;
+      color: #2E4156; } }
+  td.id, th.id {
+    width: 4em; }
+  td.fecha, th.fecha {
+    width: 10.5em; }
+  td.monto, th.monto {
+    width: 4.5em;
+    text-align: right; }
+  td.id-comercio, th.id-comercio {
+    width: 8em; }
+  td.email, th.email {
+    width: 6em; }
+  td.comentario, th.comentario {
+    width: 25%; } }
+
+div {
+  &.show div {
+    &.id-db {
+      border: solid 0.2em #436283;
+      width: 80px;
+      height: 80px;
+      float: right;
+      font-size: 4em;
+      text-align: center; }
+    &.seccion {
+      min-width: 420px;
+      padding-bottom: 15px;
+      clear: left;
+      margin-bottom: 15px;
+      float: left;
+      div {
+        border-top: 1px solid #C5C8A4;
+        display: block;
+        height: 23px;
+        padding: 8px 10px;
+        &.titulo {
+          a {
+            color: #C5C8A4;
+            &:hover {
+              color: #fff; } }
+          height: 40px;
+          text-transform: capitalize;
+          line-height: 40px;
+          background-color: #436283;
+          font-size: 1.5em;
+          color: #FFF; }
+        &.campo span {
+          margin-top: 5px;
+          &.descripcion {
+            min-width: 205px;
+            clear: both;
+            display: block;
+            float: left;
+            font-weight: bold;
+            padding-right: 15px; }
+          &.value {
+            input, select {
+              margin: 0; }
+            display: block;
+            float: left;
+            clear: right;
+            color: #8F0D0D; } } } }
+    &.botonera {
+      float: left;
+      clear: left;
+      margin-top: 1em;
+      fieldset {
+        margin: 1em 0 0 0; } } }
+  &.no-match {
+    text-align: center;
+    font-size: 1.2em;
+    border: solid 0.2em #509324;
+    padding: 1em;
+    margin-bottom: 1em; } }
+
+input.noborder {
+  border: 0;
+  background-color: Transparent; }
+
+.oculto {
+  display: none; }
+
+fieldset, form.new_role, .show .new_user, .new_button, .edit_button, .edit_button_2, .seccion, p.scroll {
+  font-weight: bold;
+  color: #547AA5;
+  background: url("/images/fondos/bg_busq.jpg") repeat-x bottom #f6f7e7;
+  padding: 0;
+  border: 1px solid #C5C8A4; }
+
+.new_button input#button_submit {
+  background: url("le-frog/images/ui-bg_highlight-soft_60_4ca20b_1x100.png") repeat-x scroll 50% 50%;
+  color: #FFF;
+  border: 0;
+  height: 30px;
+  font-weight: normal;
+  display: block;
+  line-height: 30px;
+  text-decoration: none;
+  padding: 0 15px;
+  cursor: pointer; }
+
+fieldset div.grupoCampos {
+  padding: 20px 20px 0 0; }
+
+p.scroll, .new_button, .edit_button, .edit_button_2 {
+  padding: 20px; }
+
+legend {
+  height: 48px;
+  background: #547AA5;
+  line-height: 45px;
+  display: block;
+  color: #fff;
+  position: relative;
+  width: 100%;
+  text-indent: 20px; }
+
+a:focus {
+  color: #fff; }
+
+form.new_role {
+  float: left; }
+
+.show .new_user {
+  .elemento {
+    background: none;
+    text-transform: capitalize;
+    height: 70px; }
+  label {
+    float: none;
+    display: block;
+    margin-top: 0.25em; }
+  padding: 20px 20px 0 0;
+  float: left;
+  input[type="checkbox"] {
+    float: left;
+    margin-right: 0;
+    top: 0; } }
+
+input {
+  &[type="radio"], &.checkbox, &.radio {
+    float: left;
+    margin-right: 0;
+    top: 0; } }
+
+.show {
+  .new_user {
+    .campo {
+      margin-left: 30px;
+      margin-bottom: 10px; }
+    .error_secundario input, .error input {
+      background: #fff;
+      border: 1px solid #c00000; } }
+  form div.botonera {
+    input, a {
+      background: url("le-frog/images/ui-bg_highlight-soft_60_4ca20b_1x100.png") repeat-x scroll 50% 50%;
+      color: #FFF;
+      border: 0;
+      height: 30px;
+      font-weight: normal;
+      display: block;
+      line-height: 30px;
+      text-decoration: none;
+      padding: 0 15px;
+      cursor: pointer; } } }
+
+.edit_button input#button_submit, .edit_button2 input#button_submit, .botonera a {
+  background: url("le-frog/images/ui-bg_highlight-soft_60_4ca20b_1x100.png") repeat-x scroll 50% 50%;
+  color: #FFF;
+  border: 0;
+  height: 30px;
+  font-weight: normal;
+  display: block;
+  line-height: 30px;
+  text-decoration: none;
+  padding: 0 15px;
+  cursor: pointer; }
+
+h1 {
+  margin: 0;
+  background: none repeat scroll 0 0 #547AA5;
+  color: #FFF;
+  display: block;
+  height: 48px;
+  line-height: 45px;
+  position: relative;
+  font-size: 1.2em;
+  text-indent: 20px;
+  font-weight: bold;
+  width: 100%; }
+
+.boton {
+  background: url("le-frog/images/ui-bg_highlight-soft_60_4ca20b_1x100.png") repeat-x scroll 50% 50% transparent;
+  border: 0 none;
+  color: #FFF;
+  cursor: pointer;
+  display: block;
+  float: left;
+  width: 40px;
+  font-weight: normal;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  padding: 0 15px;
+  text-decoration: none;
+  margin-right: 10px; }
+
+div.show .user_edit .seccion {
+  float: none;
+  margin-bottom: 12px; }
+
+form.new_role .seccion {
+  background: none;
+  border: 0; }
+
+.boton:hover {
+  color: #e1db37; }
+
+.botonera {
+  a {
+    float: left; }
+  fieldset a {
+    margin: 15px; } }
+
+.botonx {
+  float: right;
+  margin-left: -50px;
+  margin-right: 10px;
+  margin-top: -35px;
+  position: relative; }
+
+.title_backend {
+  padding-right: 15px;
+  background: url("/images/fondos/bg_home_header.png") repeat-x scroll 0 0 transparent;
+  border: 1px solid #C5C8A4;
+  color: #547AA5;
+  font-size: 34px;
+  margin-bottom: 15px;
+  text-indent: 15px; }
+
+.sub {
+  position: absolute;
+  font-size: 18px;
+  left: 41px;
+  position: absolute;
+  top: 5px;
+  z-index: 2;
+  color: #000; }
+
+span.value {
+  display: block; }
+
+.pagination a {
+  text-decoration: none;
+  padding: 5px;
+  background-color: #E5E6D6;
+  border: 1px solid #C5C8A4;
+  &:hover {
+    color: #78842B; } }
+
+.previous_page.disabled, .next_page.disabled {
+  background-color: #FFF;
+  border: 1px solid #A9A9A9;
+  color: #ADABAB;
+  padding: 5px; }
+
+.pagination em {
+  padding: 5px;
+  background-color: #7A7E34;
+  border: 1px solid #C5C8A4;
+  color: #fff; }
+
+.edituser {
+  margin: 0;
+  padding: 0;
+  float: left;
+  li {
+    float: left;
+    margin-right: 15px;
+    list-style: none; } }
+
+.edit_usuario {
+  background: url("/images/fondos/bg_busq.jpg") repeat-x scroll center bottom #f6f7e7;
+  padding: 15px;
+  float: left;
+  border: 1px solid #C5C8A4; }
+
+.edit_user {
+  label {
+    display: block; }
+  .campo {
+    margin-bottom: 15px;
+    .value label {
+      margin-left: 5px; } } }
+
+.editarboton {
+  margin-top: 15px; }

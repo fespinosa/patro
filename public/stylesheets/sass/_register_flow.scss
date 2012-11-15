@@ -1,0 +1,23 @@
+form#formularioRegistroMobile{
+	div.InputContainer{
+		width:70%;
+		height: 53px;
+		#PhoneContainer{
+			height:30px;
+		}
+		label.ErrorLabel{
+	     	display: none;
+			background:url(../images/bullet_error.gif) 0 no-repeat;
+		    color:#C10000;
+		    font-weight:700;
+		    font-size:10px;
+			padding-left:15px;}
+	}
+	div.InputContainer.Error{
+		input{border: solid 1px #C10000;}
+		label.ErrorLabel{display: block;}
+	}
+	div.SubmitContainer{
+		margin-top:2%;
+	}
+}

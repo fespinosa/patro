@@ -1,0 +1,33 @@
+!!!
+%html
+  %head
+    %title testing
+    <!-- Javascripts -->
+    %script{:src => "/javascripts/jquery-1.7.2.min.js", :type => "text/javascript"}
+    %script{:src => "/javascripts/bootstrap.min.js", :type => "text/javascript"}
+    %script{:src => "/javascripts/bootstrap-carousel.js", :type => "text/javascript"}
+
+    <!-- Stylesheets -->
+    = stylesheet_link_tag "stylesheet-g.css"
+    = stylesheet_link_tag "bootstrap.css"
+
+    <!-- CSRF -->
+    = csrf_meta_tag
+  %body
+    #content-all-g{:align => "center"}
+      #content-center-all-g
+        #small-menu
+          #marge-small-menu
+            %a{:href => "#overview"}
+              Overview
+        #content-header
+        #content-menu
+        #container-slide
+          #container-slide-left 
+            #container-category categorias
+          #container-slide-right
+            = render :partial => "slider"
+        #general-container
+          = yield
+        #content-footer 
+          = render :partial => "footer"

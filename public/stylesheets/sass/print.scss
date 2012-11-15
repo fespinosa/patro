@@ -1,0 +1,87 @@
+@mixin big-title{
+	color: #C25D60;
+	display: inline-block;
+	font-size: 24px;
+	height: 30px;
+	line-height: 30px;
+
+	font-weight: bold;
+}
+
+@mixin cuadro {
+	font-family: helvetica; 
+  color: #222;
+  border:1px solid #ccc;
+  background-color: #F3F3F3;
+  padding-bottom:0px;
+  padding-top:0px;
+  margin-bottom: 15px;
+	clear: both;
+}
+
+@mixin cuadro-title{
+	background-color: #F3F3F3; 
+  font-family:Helvetica;
+  font-size:12px;
+  font-weight:bold;
+	height: auto;
+	padding: 14px;
+	line-height: 100%;
+	color:black;
+	margin: 0;
+}
+
+@mixin cuadro-content {
+	padding: 1.2em;
+  background: #EBEBEB;
+  border-top: 1px solid #CCC;
+}
+
+body {
+	background: white;
+	font-family: "Helvetica Neue",Arial,Helvetica,sans-serif;	
+	ul {
+		list-style-type: none;
+	}
+}
+
+.pago {
+	#product {
+		display:none !important;
+	}
+	
+	#content { 
+		#logo-multipay {
+			float: right;
+			margin-top: 10px;
+		}
+		#botones {
+			display:none;
+		}
+	}
+	
+	#terms-link {
+		display:none;
+	}
+	
+	h2{
+		font-size: 24px;
+	}
+	
+	/**********************************/
+	/******* Voucher de pago **********/
+	/**********************************/		
+	
+	#payment-voucher {
+		@include cuadro;
+		h2 {
+			@include cuadro-title;
+		}
+		#user-data {
+			margin-bottom: 15px;
+		}
+		.content {
+			@include cuadro-content;
+		}
+	}
+}

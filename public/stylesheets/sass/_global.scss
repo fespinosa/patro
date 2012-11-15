@@ -1,0 +1,54 @@
+
+/**********************************************/
+/***** 			ESTILOS GENERALES	    *******/
+/**********************************************/
+
+body {
+  color: #808080;
+}
+
+a {
+  color: $normal-link;
+}
+
+li {
+  list-style:none;
+}
+ul {
+  margin:0;
+  padding:0;
+}
+
+p, h2, h3, h5, h6 {
+  margin-bottom:1em;
+  color:#333333;
+//  display:inline-block;
+}
+p {
+  color: #000000;
+}
+h4 {
+  margin-bottom:0;
+}
+h3 {
+  font: {
+    weight:bold;
+    size:13px;
+  }
+  margin-bottom:5px;
+  display:inline-block;
+}
+
+.clearfix {
+	clear: both;
+}
+
+
+/**************************************/
+/************ Layout ******************/
+/**************************************/
+
+#container {
+	width: 950px;
+	margin: 0 auto;
+}

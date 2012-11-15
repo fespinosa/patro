@@ -1,0 +1,206 @@
+//
+//  REGISTER FORM STYLES
+//
+label {
+  display: block;
+  color: #333333;
+}
+input[type = 'text'], input[type = 'password'] {
+  padding:5px;
+}
+input[type = 'submit'], a.boton {
+  background:$red;
+  border: 1px solid #990000;
+  color: #FFFFFF !important;
+  cursor: pointer;
+  display: inline-block !important;
+  padding: 0 10px;
+  font: {
+    family: arial;
+    size: 13px;
+    weight: bold;
+  }
+  height: 32px;
+  line-height: 32px;
+  text: {
+    align: center;
+    decoration: none;
+  }
+  &:hover {
+    background:#EF2C32;
+  }
+}
+
+form {
+	li{
+		input, textarea {
+//      background: #fff;
+//      border: 1px solid #ddd;
+      float: none;
+      vertical-align: middle; 
+			padding: 5px;
+		}
+		&.error {
+	    background: #FFDCDC;
+	    border: 1px dashed #bc0000;
+	    label {
+	      color: #BC0000; 
+			}
+	    input, textarea {
+	      border: 1px solid #bc0000; 
+			}
+	    
+		}
+		.msg_error {
+			float: right;
+      color: #BC0000;
+      display: inline-block;
+      font-weight: bold;
+      margin-left: 5px;
+      margin-top: 5px;
+      vertical-align: top;
+			
+			span {
+				display: none; 
+				color: #BC0000;
+			}
+		}
+		.field_with_errors {
+			border: none;
+			background: none;
+			input{
+				border: 1px solid #BC0000;;
+			}
+		}
+	}	
+}
+
+form.register {
+  ul {
+    padding: 7px;
+		li {
+			padding: 5px;
+      height:30px;
+			margin-bottom: 3px;
+			input, textarea {
+//	      margin: 0.5em 0;
+			}
+			div{
+				float:left;
+				label {
+			    display: inline-block;
+			    float: none;
+			    width: 150px; 
+				}
+				span{
+	        color:grey; 
+        }
+			}
+			&.elemento {
+		    
+				.help {
+		      float: none;
+		      display: inline-block;
+		      margin: 0; } 
+			}
+			.msg_error {
+				float: right;
+				span{
+				color: #BC0000;	
+				}
+			}
+			&.btn_send{
+        margin: 20px 0px 10px 5px;
+				padding:0;
+				input[type="submit"] {
+			    margin: 0 10px 0 0; }
+      }
+			
+		}
+	}
+}
+
+/*************** DEPRECADO ***************/
+/*  No usar en el futuro, se eliminara	 */
+/*************** DEPRECADO ***************/
+
+.contact_form {
+  ul {
+
+    padding: 7px;
+}
+  li {
+    list-style: url("../images/icon_flecha.gif") outside;
+    float: none;
+    display: block;
+    padding: 5px;
+    margin-bottom: 5px;
+    p {
+      margin-bottom: 0; }
+    &.botones li {
+      float: left;
+      padding: 0;
+      min-height: 0; } }
+  label {
+    display: inline-block;
+    float: none;
+    width: 150px; }
+  .elemento {
+    input, textarea {
+      margin: 0;
+      background: #fff;
+      border: 1px solid #ddd;
+      float: none;
+      vertical-align: middle; }
+    &#elem_question {
+      height: auto;
+      margin-bottom: 15px; } }
+  input#user_submit {
+    margin: 0; }
+  li.error {
+    background: #FFDCDC;
+    border: 1px dashed #bc0000;
+    label {
+      color: #BC0000; }
+    input, textarea {
+      border: 1px solid #bc0000; }
+    .msg_error {
+      color: #BC0000;
+      display: inline-block;
+      font-weight: bold;
+      margin-left: 5px;
+      margin-top: 5px;
+      vertical-align: top; } }
+  .new_user .msg_error {
+    display: none; }
+  li {
+    &.btn_send {
+      height: 30px;
+      padding: 0;
+      margin: 0;
+      min-height: 30px;
+      line-height: 30px; }
+    .help {
+      float: none;
+      display: inline-block;
+      margin: 0; } }
+  &.update_profile li {
+    &#elem_email, &#elem_celular {
+      height: 60px; } } }
+
+
+.contact_form.update {
+  a.edit {
+    line-height: 36px; }
+  ul {
+    ul {
+      background: #fff;
+      border: 1px solid #ddd; }
+    &.updating {
+      padding-left: 20px !important;
+      li {
+        background: url("../images/icon_flecha.gif") no-repeat 0px 11px;
+        text-indent: 6px;
+        li {
+          background: none;
+          text-indent: 0px; } } } } }

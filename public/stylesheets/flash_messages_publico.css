@@ -1,0 +1,70 @@
+div#flash {
+  width: 100%;
+  float: left; }
+  div#flash a.btn_close {
+    display: block;
+    float: right; }
+  div#flash .notice, div#flash .info, div#flash .success, div#flash .warning, div#flash .alert, div#flash .error, div#flash .validation {
+    font-size: 1.3em;
+    border: 1px solid;
+    margin: 10px 0px;
+    padding: 15px 15px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center; }
+  div#flash .info {
+    color: #00529B;
+    background-color: #BDE5F8;
+    background-image: url("/images/icons/Knob Message.png"); }
+  div#flash .notice, div#flash .success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    background-image: url("/images/icons/Knob Valid Green.png"); }
+  div#flash .warning, div#flash .alert {
+    color: #9F6000;
+    background-color: #FEEFB3;
+    background-image: url("/images/icons/Knob Attention.png"); }
+  div#flash .error {
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url("/images/icons/Knob Cancel.png"); }
+  div#flash .validation {
+    color: #D63301;
+    background-color: #FFCCBA;
+    background-image: url("/images/icons/Knob Remove Red.png"); }
+
+div#persistent {
+  width: 100%;
+  float: left; }
+  div#persistent .notice, div#persistent .info, div#persistent .success, div#persistent .warning, div#persistent .error, div#persistent .validation {
+    font-size: 1.3em;
+    border: 1px solid;
+    margin: 10px 0px;
+    padding: 15px 10px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center; }
+  div#persistent .info {
+    color: #00529B;
+    background-color: #BDE5F8;
+    background-image: url("/images/icons/Knob Message.png"); }
+  div#persistent .notice, div#persistent .success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    background-image: url("/images/icons/Knob Valid Green.png"); }
+  div#persistent .warning {
+    color: #9F6000;
+    background-color: #FEEFB3;
+    background-image: url("/images/icons/Knob Attention.png"); }
+  div#persistent .error {
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url("/images/icons/Knob Cancel.png"); }
+  div#persistent .validation {
+    color: #D63301;
+    background-color: #FFCCBA;
+    background-image: url("/images/icons/Knob Remove Red.png"); }
+
+div#flash, div#persistent {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  float: none; }

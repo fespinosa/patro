@@ -1,0 +1,138 @@
+/*------------------------------------------
+	Sitio:		Multipay
+	Zona:		Flujo de Abono
+	Autor:		Christian Pino
+	Versión:	1.0
+------------------------------------------*/
+
+/* abono desde el perfil */
+.profile .contenidoFlujoPago {background:#fff}
+.profile .contenidoFlujoPago .flujoAbono_contenedor {width:960px}
+.profile .contenidoFlujoPago .flujoAbono_contenedor .pasos {width:770px; height:157px; padding:30px 0 0 190px; margin:0 0 30px 0}
+.profile .contenidoFlujoPago .flujoAbono_contenedor .pasos h2 {margin:0}
+.profile .contenidoFlujoPago .flujoAbono_contenedor .proceso {margin-left:190px; margin-bottom:60px}
+.profile .contenidoFlujoPago .flujoAbono_contenedor .ayuda {width:340px}
+.profile .contenidoFlujoPago .flujoAbono_contenedor .faq {width:340px}
+.profile .contenidoFlujoPago .flujoAbono_contenedor .faq a {font-size:12px}
+
+/* abono desde el home sin login */
+.pagoHome #contenidoHome {padding:0; border:none}
+.pagoHome .flujoAbono_contenedor {width:960px}
+.pagoHome .flujoAbono_contenedor .pasos {width:930px; height:157px; padding:30px 0 0 30px; margin:0 0 30px 0}
+.pagoHome .flujoAbono_contenedor .pasos .pasosCirculos {margin-left:204px}
+.pagoHome .flujoAbono_contenedor .pasos .pasosTitulos {margin-left:195px}
+.pagoHome .flujoAbono_contenedor .pasos h2 {margin:0; width:100%; text-align:center}
+.pagoHome .flujoAbono_contenedor .proceso {margin-left:190px; margin-bottom:60px}
+.pagoHome .flujoAbono_contenedor .ayuda {width:340px}
+.pagoHome .flujoAbono_contenedor .faq {width:340px}
+.pagoHome .flujoAbono_contenedor .faq a {font-size:12px}
+.pagoHome .flujoAbono_contenedor .datosCallCenter {width:340px; height:50px; padding:10px; float:left; background:#eaeaea; border:#ddd solid 1px}
+.pagoHome .flujoAbono_contenedor .datosCallCenter p {margin:0 5px 0 0; font-weight:bold}
+
+/* zona de pago */
+.flujoAbono_contenedor {width:598px; float:left; border:solid 1px #ccc}
+.flujoAbono_contenedor .pasos {width:568px; height:134px; padding:30px 0 0 30px; float:left; border-bottom:solid 1px #e9e9e9; background:url(/images/bg_flujoAbonoPasos.jpg) 0 0 repeat}
+.flujoAbono_contenedor .proceso {width:298px; float:left; margin:30px 28px 30px 30px; background:#faf5be; border:solid 1px #e9c784; border-radius:3px; -ms-border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; -khtml-border-radius: 3px}
+.flujoAbono_contenedor .proceso .procesoContenido {width:258px; padding:20px 20px 0 20px; float:left; color:#333}
+.flujoAbono_contenedor .proceso .procesoContenido .filaDatos {width:257px; margin:0 0 10px 10px; float:left}
+.flujoAbono_contenedor .proceso .procesoContenido .filaDatos label {min-width:40px; float:left; margin:8px 14px 0 0; font-weight:bold}
+.flujoAbono_contenedor .proceso .procesoContenido .filaDatos input,
+.flujoAbono_contenedor .proceso .procesoContenido .filaDatos textarea,
+.flujoAbono_contenedor .proceso .procesoContenido .filaDatos select {padding:4px 4px 3px 4px; float:left; margin:0 10px 0 0; color:#666; background:#fff; border:solid 1px #d1d1d1; border-radius:3px; -ms-border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; -khtml-border-radius:3px}
+.flujoAbono_contenedor .proceso .procesoContenido .filaDatos input[type="radio"] {margin:9px 8px 0 0}
+.flujoAbono_contenedor .proceso .procesoContenido .filaDatos input:-webkit-input-placeholder {color:#b0b0b0}
+.flujoAbono_contenedor .proceso .procesoContenido .filaDatos input:-moz-placeholder {color:#b0b0b0}
+.flujoAbono_contenedor .proceso .procesoContenido .filaDatos .editar {float:right}
+.flujoAbono_contenedor .proceso .procesoContenido .filaDatos .tooltip {margin:9px 10px 0 0}
+.flujoAbono_contenedor .proceso .procesoContenido .filaDatos h5 {margin:-2px 0 0 0}
+.flujoAbono_contenedor .proceso .procesoContenido .filaDatos * {float:left; margin:0 10px 0 0}
+.flujoAbono_contenedor .proceso .procesoBotones {width:278px; float:left;}
+.flujoAbono_contenedor .proceso .procesoBotones .proceso_volver {padding:37px 0 0 0; margin:0 0 10px 0; float:left}
+.flujoAbono_contenedor .proceso .procesoBotones .proceso_continuar {padding:20px 20px 0 0; margin:0 0 20px 0; float:right; text-align:right}
+.flujoAbono_contenedor .proceso .procesoBotones .proceso_continuar input[type="submit"], a.boton {
+	vertical-align: baseline;
+	margin:10px 10px 0 10px;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	padding: .4em 1.5em .4em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .3em; 
+	-moz-border-radius: .3em;
+	border-radius: .3em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	/*color*/
+	color: #fff;
+	border: solid 1px #c10000;
+	background: #c10000;
+	background: -webkit-gradient(linear, left top, left bottom, from(#d81e1e), to(#b50101));
+	background: -moz-linear-gradient(top,  #d81e1e,  #b50101);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#d81e1e', endColorstr='#b50101');}
+.flujoAbono_contenedor .proceso .procesoBotones .proceso_continuar input[type="submit"]:hover, a.boton:hover {
+	background: #b61318;
+	background: -webkit-gradient(linear, left top, left bottom, from(#c9151b), to(#a11115));
+	background: -moz-linear-gradient(top,  #c9151b,  #a11115);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#c9151b', endColorstr='#a11115');}
+.flujoAbono_contenedor .proceso .procesoBotones .proceso_continuar input[type="submit"]:active, a.boton:active {
+	color: #fff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#aa1317), to(#ed1c24));
+	background: -moz-linear-gradient(top,  #aa1317,  #ed1c24);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#aa1317', endColorstr='#ed1c24');}
+
+.flujoAbono_contenedor .proceso .procesoBotones .proceso_nuevaPestana {padding:10px 20px 0 0; margin:0 0 10px 0; float:right}
+.flujoAbono_contenedor .ayuda {width:210px; height:250px; float:left; margin:30px 30px 30px 0}
+.flujoAbono_contenedor .videoAyuda {width:210px; height:140px; float:left}
+.verVideoAyuda {width:149px; height:83px; float:left; clear:both; background:url(/images/sprite_verVideoAyuda.jpg) 0 0 no-repeat; cursor:pointer}
+.verVideoAyuda:hover {background-position:0 -83px}
+.flujoAbono_contenedor .faq {width:210px; height:210px; margin:15px 0 0 0; float:left}
+.flujoAbono_contenedor .faq div {width:100%; height:100%; float:left}
+.flujoAbono_contenedor .faq p {margin:3px 0 0 10px}
+.flujoAbono_contenedor .datosCallCenter {padding:8px; float:left; background:#eaeaea; border:#ddd solid 1px}
+.flujoAbono_contenedor .datosCallCenter p {margin:0 5px 0 0; font-weight:bold}
+
+/* textos */
+.flujoAbono_contenedor .pasos h2 {float:left; margin-top:-7px; font-size:24px}
+.flujoAbono_contenedor .proceso h3 {width:284px; margin:0; padding:10px 0 10px 14px; float:left; border-bottom:solid 1px #e9c784; font-size:16px; text-transform:uppercase; letter-spacing:-0.5px}
+.flujoAbono_contenedor .faq a {font-size:9px; color:#666; text-decoration:underline; float:left; clear:both}
+.flujoAbono_contenedor .faq a:hover {color:#333}
+
+/* pasos */
+.pasosCirculos {width:514px; height:50px; margin:10px 0 0 14px; float:left; clear:both; background:url(/images/sprite_pasos.png) 0 0 no-repeat}
+.pasosTitulos {width:550px; height:30px; margin:10px 0 0 3px; float:left; clear:both; text-align:center; line-height:12px}
+.pasosTitulos h4 {width:74px; height:30px; margin:0 142px 0 0; float:left}
+.pasosTitulos h5 {width:103px; height:30px; margin:0 133px 0 0; float:left}
+.pasosTitulos h6 {width:90px; height:30px; margin:0; float:left}
+.paso_1 .pasosCirculos {background-position:0 0}
+.paso_1 .pasosTitulos h4 {font-size:12px; font-weight:bold; color:#514a4c}
+.paso_1 .pasosTitulos h5 {font-size:12px; font-weight:bold; color:#959495}
+.paso_1 .pasosTitulos h6 {font-size:12px; font-weight:bold; color:#959495}
+.paso_2 .pasosCirculos {background-position:0 -50px}
+.paso_2 .pasosTitulos h4 {font-size:12px; font-weight:bold; color:#959495}
+.paso_2 .pasosTitulos h5 {font-size:12px; font-weight:bold; color:#514a4c}
+.paso_2 .pasosTitulos h6 {font-size:12px; font-weight:bold; color:#959495}
+.paso_3 .pasosCirculos {background-position:0 -100px}
+.paso_3 .pasosTitulos h4 {font-size:12px; font-weight:bold; color:#959495}
+.paso_3 .pasosTitulos h5 {font-size:12px; font-weight:bold; color:#959495}
+.paso_3 .pasosTitulos h6 {font-size:12px; font-weight:bold; color:#514a4c}
+
+/*pestana ayuda abono*/
+.pestanaAyudaAbono {width:690px; height:400px; margin:2px auto 0 auto; background:url(/images/img_pestanaAyudaAbono_flecha.gif) 0 0 no-repeat}
+.pestanaAyudaAbono .contenedor {margin:54px 0 0 87px; padding:30px; float:left; background:#f6f6f6; border:solid 1px #e3e3e3; border-radius:4px; -ms-border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; -khtml-border-radius: 4px}
+.pestanaAyudaAbono .contenedor h4 {margin:-2px 5px 20px 0; float:left}
+
+/* modal espera de transferencia */
+.modalTransferencia {width:790px; height:460px; position:relative}
+.modalTransferencia h2 {padding-bottom:20px; border-bottom:#e4e4e4 solid 1px}
+.modalDatosCuenta {width:298px; float:left; margin:30px 28px 30px 30px; background:#faf5be; border:solid 1px #e9c784; border-radius:3px; -ms-border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; -khtml-border-radius: 3px}
+.modalDatosCuenta h3 {width:286px; margin:0; padding:10px 0 10px 14px; float:left; border-bottom:solid 1px #e9c784; font-size:16px; letter-spacing:-0.5px}
+.modalDatosCuenta p {margin-bottom:5px; float:left; clear:both}
+.modalProcesoContenido {width:258px; padding:20px 20px 0 20px; float:left; color:#333}
+.modalTips {width:360px; padding:20px; margin:30px 30px 30px 0; float:left; background:#eaeaea; border:#ddd solid 1px}
+.modalFooter {width:760px; height:30px; padding:0 20px 0 0; float:left; text-align:right}
+#spinnerTransferencia {width:40px; height:40px; float:left; margin:0 10px 0 0}
+.cerrarModal {width:18px; height:18px; top:0; right:0; position:absolute; background:url(/images/btn_x_grey.png) 0 0 no-repeat; cursor:pointer}
+.cerrarModal:hover {filter:alpha(opacity=70); opacity:0.7}

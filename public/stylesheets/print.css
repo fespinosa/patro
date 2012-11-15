@@ -1,0 +1,46 @@
+body {
+  background: white;
+  font-family: "Helvetica Neue",Arial,Helvetica,sans-serif; }
+  body ul {
+    list-style-type: none; }
+
+.pago {
+  /**********************************/
+  /******* Voucher de pago **********/
+  /**********************************/ }
+  .pago #product {
+    display: none !important; }
+  .pago #content #logo-multipay {
+    float: right;
+    margin-top: 10px; }
+  .pago #content #botones {
+    display: none; }
+  .pago #terms-link {
+    display: none; }
+  .pago h2 {
+    font-size: 24px; }
+  .pago #payment-voucher {
+    font-family: helvetica;
+    color: #222;
+    border: 1px solid #ccc;
+    background-color: #F3F3F3;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-bottom: 15px;
+    clear: both; }
+    .pago #payment-voucher h2 {
+      background-color: #F3F3F3;
+      font-family: Helvetica;
+      font-size: 12px;
+      font-weight: bold;
+      height: auto;
+      padding: 14px;
+      line-height: 100%;
+      color: black;
+      margin: 0; }
+    .pago #payment-voucher #user-data {
+      margin-bottom: 15px; }
+    .pago #payment-voucher .content {
+      padding: 1.2em;
+      background: #EBEBEB;
+      border-top: 1px solid #CCC; }

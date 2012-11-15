@@ -1,0 +1,54 @@
+.formulario { clear: both; float: right; }
+
+input#phone {
+background-color: #e6e6e6;
+/*padding: 11px 11px 9px;*/
+text-align: center;
+font-size: 12px;
+color: #848383;
+/*border: 1px solid #f5f5f6;*/
+width: 166px;/*
+font-size: 100%;*/
+font-family: sans-serif;}
+
+input.submit{
+  border: #888888;
+  background-color: #888888;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#888888), to(#2f2e2e)); /* Safari 4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #888888, #2f2e2e); /* Chrome 10+, Safari 5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(top, #888888, #2f2e2e); /* Firefox 3.6-15 */
+  background-image:      -o-linear-gradient(top, #888888, #2f2e2e); /* Opera 11.10-12.00 */
+  background-image:         linear-gradient(to bottom, #888888, #2f2e2e); /* Firefox 16+, IE10, Opera 12.50+ */color:#fff;
+  font-style: italic;
+  font-size: 20px;
+   -webkit-border-radius: 5px; /* Safari 3-4, iOS 1-3.2, Android ≤1.6 */
+          border-radius: 5px; /* Opera 10.5, IE9, Safari 5, Chrome, Firefox 4+, iOS 4, Android 2.1+ */
+  text-align: center;
+  width: 189px;
+  text-transform: uppercase;
+  padding: 6px 0;
+  margin-right: 57px;
+  margin-top: 83px;
+}
+
+input.submit:hover{
+  border: #2f2e2e;
+  background-color: #2f2e2e;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2f2e2e), to(#888888)); /* Safari 4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #2f2e2e, #888888); /* Chrome 10+, Safari 5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(top, #2f2e2e, #888888); /* Firefox 3.6-15 */
+  background-image:      -o-linear-gradient(top, #2f2e2e, #888888); /* Opera 11.10-12.00 */
+  background-image:         linear-gradient(to bottom, #2f2e2e, #888888); /* Firefox 16+, IE10, Opera 12.50+ */color:#fff;
+  font-style: italic;
+  font-size: 20px;
+   -webkit-border-radius: 5px; /* Safari 3-4, iOS 1-3.2, Android ≤1.6 */
+          border-radius: 5px; /* Opera 10.5, IE9, Safari 5, Chrome, Firefox 4+, iOS 4, Android 2.1+ */
+  text-align: center;
+  width: 189px;
+  text-transform: uppercase;
+  padding: 6px 0;
+  margin-right: 57px;
+  margin-top: 83px;
+}
+
+

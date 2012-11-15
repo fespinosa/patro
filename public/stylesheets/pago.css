@@ -1,0 +1,1144 @@
+/**********************************************/
+/***** 			ESTILOS GENERALES	    *******/
+/**********************************************/
+body {
+  color: #808080; }
+
+a {
+  color: #335998; }
+
+li {
+  list-style: none; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+p, h2, h3, h5, h6 {
+  margin-bottom: 1em;
+  color: #333333; }
+
+p {
+  color: #000000; }
+
+h4 {
+  margin-bottom: 0; }
+
+h3 {
+  font-weight: bold;
+  font-size: 13px;
+  margin-bottom: 5px;
+  display: inline-block; }
+
+.clearfix {
+  clear: both; }
+
+/**************************************/
+/************ Layout ******************/
+/**************************************/
+#container {
+  width: 950px;
+  margin: 0 auto; }
+
+/* `HTML basico
+----------------------------------------------------------------------------------------------------*/
+body {
+  font: 12px/1.5 "Helvetica", Arial, FreeSans, sans-serif;
+  color: #666; }
+
+pre, code {
+  font-family: 'DejaVu Sans Mono', Menlo, Consolas, monospace; }
+
+hr {
+  border: 0 #ccc solid;
+  border-top-width: 1px;
+  clear: both;
+  height: 0; }
+
+/* `Titulos
+----------------------------------------------------------------------------------------------------*/
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #c10000;
+  letter-spacing: -0.5px;
+  margin-bottom: 0; }
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #d68f00;
+  letter-spacing: -0.5px;
+  margin-bottom: 0; }
+
+h3 {
+  font-size: 21px;
+  font-weight: bold;
+  color: #444;
+  letter-spacing: -0.5px;
+  margin-bottom: 0; }
+
+h4 {
+  font-size: 17px;
+  font-weight: bold;
+  color: #666;
+  letter-spacing: -0.5px;
+  margin-bottom: 0; }
+
+h5 {
+  font-size: 15px;
+  font-weight: bold;
+  color: #666;
+  margin-bottom: 0; }
+
+h6 {
+  font-size: 13px;
+  font-weight: bold;
+  color: #999;
+  margin-bottom: 0; }
+
+/* `Colores
+----------------------------------------------------------------------------------------------------*/
+.rojoCorp {
+  color: #c10000; }
+
+.amarilloOscuro {
+  color: #d68f00; }
+
+.amarilloClaro {
+  color: #faf5be; }
+
+.cafeOscuro {
+  color: #802d04; }
+
+.cafeClaro {
+  color: #e9c784; }
+
+.grisOscuro {
+  color: #231f20; }
+
+.grisMedio {
+  color: #514a4c; }
+
+.grisClaro {
+  color: #b7b7b7; }
+
+.grisMedio {
+  color: #514a4c; }
+
+/* `Espaciado
+----------------------------------------------------------------------------------------------------*/
+ol {
+  list-style: decimal; }
+
+ul {
+  list-style: disc; }
+
+li {
+  margin-left: 30px; }
+
+p,
+dl,
+hr,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset,
+figure {
+  margin-bottom: 20px; }
+
+/* `Alineado
+----------------------------------------------------------------------------------------------------*/
+.alignLeft {
+  text-align: left; }
+
+.alignRight {
+  text-align: right; }
+
+.alignCenter {
+  text-align: center; }
+
+.alignJustify {
+  text-align: justify; }
+
+/* `Links
+----------------------------------------------------------------------------------------------------*/
+a {
+  color: #c10000;
+  text-decoration: underline; }
+
+a:hover {
+  color: #900; }
+
+.linkChico {
+  font-size: 10px;
+  color: #c10000;
+  text-decoration: underline; }
+
+.linkChico:hover {
+  color: #900; }
+
+/**************************************/
+/************ Tooltips ****************/
+/**************************************/
+.image-tip {
+  position: relative; }
+  .image-tip img {
+    position: absolute; }
+
+a.text-tip {
+  border-bottom: 1px dashed;
+  text-decoration: none;
+  cursor: help; }
+
+/**************************************/
+/************ Utils *******************/
+/**************************************/
+.cuadro, div.cuadro, div.cuadro-light {
+  font-family: helvetica;
+  color: #222;
+  border: 1px solid #ccc;
+  background-color: #F3F3F3;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin-bottom: 15px;
+  clear: both; }
+
+.cuadro-title, div.cuadro h2, div.cuadro-light h2, body.pago #content #payment-voucher h2 {
+  background-color: #F3F3F3;
+  font-family: Helvetica;
+  font-size: 12px;
+  font-weight: bold;
+  height: auto;
+  padding: 14px;
+  line-height: 100%;
+  color: black;
+  margin: 0; }
+
+.cuadro-content, div.cuadro div.content, div.cuadro-light div.content {
+  padding: 1.2em;
+  background: #EBEBEB;
+  border-top: 1px solid #CCC; }
+
+.big-title {
+  color: #C25D60;
+  display: inline-block;
+  font-size: 24px;
+  height: 30px;
+  line-height: 30px;
+  font-weight: bold; }
+
+/**************************************/
+/************ Parrafos ****************/
+/**************************************/
+.info-experto {
+  color: black;
+  font-weight: normal; }
+
+.info-inexperto {
+  color: gray;
+  font-weight: normal; }
+
+/**************************************/
+/************ Plug-ins ****************/
+/**************************************/
+#mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9000;
+  background-color: #000;
+  display: none; }
+
+#boxes .window {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 840px;
+  display: none;
+  z-index: 9999;
+  padding: 20px;
+  background: #f3f3f3;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px; }
+#boxes #dialog {
+  width: 375px;
+  height: 203px;
+  padding: 10px;
+  background-color: #fff; }
+
+#boxes .window .contenido_estatico {
+  width: auto; }
+
+.close {
+  cursor: pointer; }
+
+.close:hover {
+  filter: alpha(opacity=70);
+  opacity: 0.7; }
+
+.tip_content {
+  display: none; }
+
+a.text-tip, .tip.tooltip {
+  cursor: help;
+  text-decoration: none; }
+
+label {
+  display: block;
+  color: #333333; }
+
+input[type='text'], input[type='password'] {
+  padding: 5px; }
+
+input[type='submit'], a.boton {
+  background: #c25d60;
+  border: 1px solid #990000;
+  color: #FFFFFF !important;
+  cursor: pointer;
+  display: inline-block !important;
+  padding: 0 10px;
+  font-family: arial;
+  font-size: 13px;
+  font-weight: bold;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  text-decoration: none; }
+  input[type='submit']:hover, a.boton:hover {
+    background: #EF2C32; }
+
+form li input, form li textarea {
+  float: none;
+  vertical-align: middle;
+  padding: 5px; }
+form li.error {
+  background: #FFDCDC;
+  border: 1px dashed #bc0000; }
+  form li.error label {
+    color: #BC0000; }
+  form li.error input, form li.error textarea {
+    border: 1px solid #bc0000; }
+form li .msg_error {
+  float: right;
+  color: #BC0000;
+  display: inline-block;
+  font-weight: bold;
+  margin-left: 5px;
+  margin-top: 5px;
+  vertical-align: top; }
+  form li .msg_error span {
+    display: none;
+    color: #BC0000; }
+form li .field_with_errors {
+  border: none;
+  background: none; }
+  form li .field_with_errors input {
+    border: 1px solid #BC0000; }
+
+form.register ul {
+  padding: 7px; }
+  form.register ul li {
+    padding: 5px;
+    height: 30px;
+    margin-bottom: 3px; }
+    form.register ul li div {
+      float: left; }
+      form.register ul li div label {
+        display: inline-block;
+        float: none;
+        width: 150px; }
+      form.register ul li div span {
+        color: grey; }
+    form.register ul li.elemento .help {
+      float: none;
+      display: inline-block;
+      margin: 0; }
+    form.register ul li .msg_error {
+      float: right; }
+      form.register ul li .msg_error span {
+        color: #BC0000; }
+    form.register ul li.btn_send {
+      margin: 20px 0px 10px 5px;
+      padding: 0; }
+      form.register ul li.btn_send input[type="submit"] {
+        margin: 0 10px 0 0; }
+
+/*************** DEPRECADO ***************/
+/*  No usar en el futuro, se eliminara	 */
+/*************** DEPRECADO ***************/
+.contact_form ul {
+  padding: 7px; }
+.contact_form li {
+  list-style: url("../images/icon_flecha.gif") outside;
+  float: none;
+  display: block;
+  padding: 5px;
+  margin-bottom: 5px; }
+  .contact_form li p {
+    margin-bottom: 0; }
+  .contact_form li.botones li {
+    float: left;
+    padding: 0;
+    min-height: 0; }
+.contact_form label {
+  display: inline-block;
+  float: none;
+  width: 150px; }
+.contact_form .elemento input, .contact_form .elemento textarea {
+  margin: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  float: none;
+  vertical-align: middle; }
+.contact_form .elemento#elem_question {
+  height: auto;
+  margin-bottom: 15px; }
+.contact_form input#user_submit {
+  margin: 0; }
+.contact_form li.error {
+  background: #FFDCDC;
+  border: 1px dashed #bc0000; }
+  .contact_form li.error label {
+    color: #BC0000; }
+  .contact_form li.error input, .contact_form li.error textarea {
+    border: 1px solid #bc0000; }
+  .contact_form li.error .msg_error {
+    color: #BC0000;
+    display: inline-block;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-top: 5px;
+    vertical-align: top; }
+.contact_form .new_user .msg_error {
+  display: none; }
+.contact_form li.btn_send {
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  min-height: 30px;
+  line-height: 30px; }
+.contact_form li .help {
+  float: none;
+  display: inline-block;
+  margin: 0; }
+.contact_form.update_profile li#elem_email, .contact_form.update_profile li#elem_celular {
+  height: 60px; }
+
+.contact_form.update a.edit {
+  line-height: 36px; }
+.contact_form.update ul ul {
+  background: #fff;
+  border: 1px solid #ddd; }
+.contact_form.update ul.updating {
+  padding-left: 20px !important; }
+  .contact_form.update ul.updating li {
+    background: url("../images/icon_flecha.gif") no-repeat 0px 11px;
+    text-indent: 6px; }
+    .contact_form.update ul.updating li li {
+      background: none;
+      text-indent: 0px; }
+
+div#flash {
+  width: 100%;
+  float: left; }
+  div#flash a.btn_close {
+    display: block;
+    float: right; }
+  div#flash .notice, div#flash .info, div#flash .success, div#flash .warning, div#flash .alert, div#flash .error, div#flash .validation {
+    font-size: 1.3em;
+    border: 1px solid;
+    margin: 10px 0px;
+    padding: 15px 15px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center; }
+  div#flash .info {
+    color: #00529B;
+    background-color: #BDE5F8;
+    background-image: url("/images/icons/Knob Message.png"); }
+  div#flash .notice, div#flash .success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    background-image: url("/images/icons/Knob Valid Green.png"); }
+  div#flash .warning, div#flash .alert {
+    color: #9F6000;
+    background-color: #FEEFB3;
+    background-image: url("/images/icons/Knob Attention.png"); }
+  div#flash .error {
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url("/images/icons/Knob Cancel.png"); }
+  div#flash .validation {
+    color: #D63301;
+    background-color: #FFCCBA;
+    background-image: url("/images/icons/Knob Remove Red.png"); }
+
+div#persistent {
+  width: 100%;
+  float: left; }
+  div#persistent .notice, div#persistent .info, div#persistent .success, div#persistent .warning, div#persistent .error, div#persistent .validation {
+    font-size: 1.3em;
+    border: 1px solid;
+    margin: 10px 0px;
+    padding: 15px 10px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center; }
+  div#persistent .info {
+    color: #00529B;
+    background-color: #BDE5F8;
+    background-image: url("/images/icons/Knob Message.png"); }
+  div#persistent .notice, div#persistent .success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    background-image: url("/images/icons/Knob Valid Green.png"); }
+  div#persistent .warning {
+    color: #9F6000;
+    background-color: #FEEFB3;
+    background-image: url("/images/icons/Knob Attention.png"); }
+  div#persistent .error {
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url("/images/icons/Knob Cancel.png"); }
+  div#persistent .validation {
+    color: #D63301;
+    background-color: #FFCCBA;
+    background-image: url("/images/icons/Knob Remove Red.png"); }
+
+#footer {
+  text-align: center;
+  margin-top: 30px; }
+  #footer ul {
+    margin: 0;
+    padding: 0; }
+
+#footercontent {
+  display: block;
+  padding: 1em 0 0.1em;
+  font-size: 12px;
+  color: #666;
+  background: #f3f3f3;
+  bottom: 0;
+  text-align: center;
+  margin: 0 auto; }
+  #footercontent ul {
+    margin: 0;
+    padding: 0; }
+    #footercontent ul li {
+      display: inline; }
+  #footercontent a {
+    color: #666; }
+
+#verisign {
+  margin: 0 auto;
+  width: 190px; }
+
+ul#transfer-instructions {
+  padding: 10px; }
+  ul#transfer-instructions li {
+    color: #333; }
+    ul#transfer-instructions li span.concept {
+      display: inline-block;
+      width: 150px;
+      margin: 0px 10px; }
+
+div#waiting-animation {
+  background: url(/images/pago/loading_nuevo.gif) no-repeat center;
+  width: 440px;
+  height: 22px;
+  margin: 0 auto; }
+
+.datosCallCenter h4 {
+  font-size: 14px; }
+.datosCallCenter h6 {
+  font-size: 11px; }
+
+.faq #accordion a {
+  font-size: 10px; }
+.faq #accordion p {
+  font-size: 10px;
+  color: #666; }
+.faq #accordion ul {
+  font-size: 10px; }
+
+body.pago #container {
+  margin: 20px auto; }
+body.pago h2 {
+  color: #c25d60;
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: bold; }
+body.pago #logo-comercio {
+  font-size: 10px;
+  font-variant: small-caps;
+  font-weight: bold;
+  margin-bottom: 10px; }
+body.pago #product {
+  margin-top: 0;
+  padding-top: 15px; }
+body.pago #abort-payment {
+  clear: both;
+  margin-top: 10px;
+  padding-top: 10px;
+  text-align: center; }
+body.pago img.help-tip {
+  background: url(/images/question_mark.gif) center no-repeat;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 5px; }
+body.pago .box {
+  padding: 10px 15px 15px 13px;
+  background: #F3F3F3;
+  overflow: auto;
+  overflow-x: hidden; }
+  body.pago .box .light {
+    color: gray;
+    font-weight: normal; }
+body.pago #flash {
+  width: 914px; }
+body.pago ol#wizard {
+  overflow: auto;
+  padding: 0;
+  width: 700px;
+  margin: 30px auto; }
+  body.pago ol#wizard li {
+    text-align: center;
+    width: 100 px;
+    float: left;
+    padding-right: 80px; }
+    body.pago ol#wizard li h3 {
+      font-size: 24px;
+      color: #aaa;
+      display: block; }
+    body.pago ol#wizard li p {
+      color: #aaa; }
+    body.pago ol#wizard li.last {
+      padding-right: 0; }
+    body.pago ol#wizard li.active h3, body.pago ol#wizard li.active p {
+      color: black; }
+body.pago #content {
+  position: relative;
+  border: 2px #f3f3f3 solid;
+  padding: 10px 20px 10px; }
+  body.pago #content #logo-multipay {
+    float: right;
+    margin-top: 10px; }
+  body.pago #content #user-data {
+    margin-bottom: 1em; }
+  body.pago #content ul#available-mediums {
+    padding: 0px 0px; }
+    body.pago #content ul#available-mediums .boton {
+      min-width: 160px; }
+    body.pago #content ul#available-mediums a.boton {
+      padding: 0 7px; }
+    body.pago #content ul#available-mediums li {
+      margin-bottom: 10px; }
+      body.pago #content ul#available-mediums li.error {
+        color: #333;
+        background: #FFDCDC;
+        border: 1px dashed #BC0000; }
+        body.pago #content ul#available-mediums li.error .error_msg {
+          font-weight: bold;
+          color: #BC0000;
+          float: right; }
+  body.pago #content .auth_error {
+    font-size: 1em; }
+  body.pago #content ul#pay-mediums {
+    margin: 10px 0;
+    background: white;
+    padding: 10px; }
+    body.pago #content ul#pay-mediums li {
+      position: relative;
+      color: black;
+      padding: 10px;
+      overflow: hidden; }
+      body.pago #content ul#pay-mediums li:hover {
+        background: #F3F3F3; }
+      body.pago #content ul#pay-mediums li .title {
+        float: left; }
+      body.pago #content ul#pay-mediums li div.tip {
+        clear: both;
+        display: none; }
+      body.pago #content ul#pay-mediums li div.error_msg {
+        display: none; }
+      body.pago #content ul#pay-mediums li.disabled * {
+        color: #aaaaaa; }
+        body.pago #content ul#pay-mediums li.disabled * .text-tip {
+          font-style: italic; }
+      body.pago #content ul#pay-mediums li .sort-handle {
+        cursor: move;
+        display: none;
+        position: absolute;
+        width: 50px;
+        top: 10px;
+        right: 0px;
+        height: 30px;
+        background: url(/images/icons/reorder-light.png) no-repeat center center;
+        text-indent: -1000px; }
+      body.pago #content ul#pay-mediums li:hover .sort-handle {
+        display: block; }
+        body.pago #content ul#pay-mediums li:hover .sort-handle:hover {
+          background: url(/images/icons/reorder.png) no-repeat center center; }
+      body.pago #content ul#pay-mediums li.error div.error_msg {
+        display: block;
+        float: right;
+        color: #c25d60; }
+  body.pago #content ul#validation-methods li img {
+    padding-top: 8px;
+    background: none; }
+  body.pago #content ul#validation-methods li:not(:first-child) {
+    padding-top: 10px; }
+  body.pago #content ul#validation-methods li:not(:last-child) {
+    padding-bottom: 5px;
+    height: 34px; }
+    body.pago #content ul#validation-methods li:not(:last-child) form {
+      margin-right: 3px;
+      float: left; }
+      body.pago #content ul#validation-methods li:not(:last-child) form #inXML {
+        height: 32px;
+        border: 1px solid #900; }
+  body.pago #content ul#validation-methods li :last-child {
+    overflow: hidden;
+    padding-bottom: 5px; }
+  body.pago #content ul#validation-methods li h3 {
+    display: block; }
+  body.pago #content ul#validation-methods li .boton {
+    margin: 0px; }
+  body.pago #content #nserie-validation {
+    font-family: helvetica;
+    color: #222;
+    border: 1px solid #ccc;
+    background-color: #F3F3F3;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-bottom: 15px;
+    clear: both;
+    padding: 20px; }
+  body.pago #content #payment-add-credits form ul {
+    padding: 0; }
+  body.pago #content #payment-add-credits form h3 {
+    margin: 10px 20px 10px 0;
+    font-weight: bold; }
+  body.pago #content #payment-add-credits form li {
+    margin: 0;
+    height: 35px;
+    line-height: 35px; }
+    body.pago #content #payment-add-credits form li label {
+      margin-left: 20px;
+      width: 150px;
+      float: left; }
+  body.pago #content #payment-add-credits form ul#transfer-instructions {
+    padding-bottom: 20px; }
+    body.pago #content #payment-add-credits form ul#transfer-instructions li {
+      height: 17px;
+      padding: 0 20px; }
+  body.pago #content #payment-waiting-deposit ul#transfer-instructions {
+    width: 350px;
+    margin: 0 auto; }
+  body.pago #content #payment-voucher ul#payment-data {
+    background: url(/images/pago/pago_realizado.png) no-repeat scroll right top;
+    margin-bottom: 25px; }
+    body.pago #content #payment-voucher ul#payment-data li {
+      color: #333333;
+      margin-bottom: 3px; }
+      body.pago #content #payment-voucher ul#payment-data li#footer-voucher {
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid #333;
+        font-size: 10px;
+        text-align: left; }
+
+#logo {
+  background: url(../../../images/mplogo.png) no-repeat 0 30px;
+  height: 38px;
+  padding: 20px 0; }
+
+#logomp {
+  margin: 60px 0 5px 0; }
+  #logomp img {
+    float: right; }
+
+#session {
+  text-align: center;
+  background: #f3f3f3;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-weight: bold; }
+  #session p {
+    color: #000000; }
+
+#pago {
+  border: 2px #f3f3f3 solid;
+  padding: 10px 10px 0; }
+  #pago .mkt p {
+    font-size: 15px;
+    color: #139527; }
+  #pago .mkt ul li {
+    float: left; }
+  #pago .lista {
+    margin: 10px 0;
+    padding: 10px;
+    background: #FFFFFF; }
+    #pago .lista .mostrar.mediums li span {
+      display: block;
+      padding: 1em; }
+    #pago .lista .mostrar.mediums li:hover {
+      background-color: #f3f3f3; }
+    #pago .lista .mostrar.mediums .mostrar .tip_content li {
+      height: auto; }
+    #pago .lista .ordenable li:hover {
+      background: #f3f3f3;
+      cursor: move !important; }
+    #pago .lista h6 {
+      margin-bottom: 0px; }
+    #pago .lista .tip_content li a {
+      text-decoration: underline;
+      font-weight: bold;
+      color: #335998; }
+      #pago .lista .tip_content li a:hover {
+        color: #c25d60; }
+    #pago .lista li {
+      background-color: #FFFFFF;
+      color: #000000; }
+      #pago .lista li i {
+        color: #808080; }
+      #pago .lista li a {
+        text-decoration: none;
+        color: #666;
+        padding: 6px;
+        display: block; }
+        #pago .lista li a.edit {
+          color: #335998;
+          text-decoration: underline;
+          background: none;
+          display: inline;
+          padding: 0; }
+          #pago .lista li a.edit:hover {
+            color: #bf0000; }
+        #pago .lista li a.condition {
+          display: inline-block;
+          color: #335998;
+          text-decoration: underline;
+          float: right; }
+          #pago .lista li a.condition:hover {
+            color: #c25d60; }
+      #pago .lista li li {
+        background-color: #f3f3f3 !important; }
+        #pago .lista li li.tipy {
+          background: transparent !important; }
+  #pago li {
+    background: #f3f3f3;
+    margin-bottom: 15px;
+    padding: 10px;
+    float: left; }
+    #pago li .mediopago {
+      float: left;
+      padding: 10px 10px 10px 0; }
+    #pago li .cupon p {
+      font-weight: normal;
+      margin-top: 15px; }
+    #pago li .cupon li {
+      color: #000; }
+      #pago li .cupon li ul {
+        margin-top: 15px;
+        padding-left: 15px; }
+        #pago li .cupon li ul li {
+          padding: 5px 0;
+          list-style: circle outside; }
+    #pago li .cupon .titulo {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 15px; }
+      #pago li .cupon .titulo b {
+        color: #bc0000; }
+    #pago li .cupon .subtitle {
+      background: #fff;
+      display: block;
+      height: 40px;
+      line-height: 40px;
+      float: left;
+      text-indent: 20px; }
+    #pago li li {
+      padding: 0;
+      margin-bottom: 0;
+      float: none; }
+      #pago li li p {
+        font-weight: bold; }
+      #pago li li.desglose {
+        background: url("../images/pago/pago_realizado.png") no-repeat scroll center right #e6e6e6;
+        padding: 10px;
+        margin-bottom: 25px; }
+        #pago li li.desglose li {
+          background: transparent;
+          color: #000000; }
+        #pago li li.desglose p {
+          margin-bottom: 0; }
+    #pago li.profile {
+      margin-bottom: 0;
+      background: #FFFFFF;
+      padding: 20px; }
+      #pago li.profile ul {
+        padding-left: 0px; }
+      #pago li.profile li {
+        background: #FFFFFF; }
+        #pago li.profile li p {
+          margin-bottom: 0;
+          color: #000000; }
+        #pago li.profile li span {
+          color: #000000; }
+  #pago a.edit {
+    display: inline;
+    background: url(../images/pago/ico_edit.jpg) no-repeat;
+    display: inline-block;
+    height: 20px;
+    text-indent: 30px; }
+  #pago ul.mediums a.add_new_medium {
+    text-indent: 0px;
+    color: #335998;
+    text-decoration: underline; }
+  #pago .title {
+    float: left;
+    height: 30px;
+    padding: 0;
+    background: none; }
+    #pago .title h2 {
+      color: #c25d60;
+      display: inline;
+      font-size: 24px;
+      font-weight: bold; }
+    #pago .title img {
+      float: right;
+      margin: 11px 17px; }
+  #pago form li {
+    padding: 0;
+    margin-bottom: 0px; }
+    #pago form li small {
+      display: none;
+      background: url(../../../images/pago/bg_alert.png) no-repeat;
+      color: #990000;
+      font-size: 11px;
+      text-indent: 30px; }
+    #pago form li.error small {
+      display: block; }
+    #pago form li.error input {
+      background: #f99;
+      border: 1px solid #990000;
+      color: #AC2025; }
+  #pago form#login li {
+    margin-bottom: 0px; }
+    #pago form#login li:last-child {
+      margin-bottom: 0; }
+    #pago form#login li li {
+      margin-bottom: 0; }
+
+#anular a {
+  padding: 5px 15px; }
+
+#alert {
+  background: #FF9999;
+  border: 2px solid #c33;
+  margin-bottom: 15px;
+  padding: 10px;
+  line-height: 50px; }
+  #alert img {
+    float: left; }
+  #alert p {
+    color: #950F0F;
+    float: left;
+    margin-bottom: 0;
+    text-indent: 147px;
+    font-size: 15px; }
+
+#product {
+  margin-top: 50px; }
+  #product h4 {
+    color: #c25d60;
+    font-size: 24px;
+    font-weight: bold; }
+  #product p {
+    color: #000000;
+    font-weight: bold;
+    font-size: 13px; }
+
+.tip_content {
+  background: none repeat scroll 0 0 #f3f3f3;
+  display: none;
+  position: absolute;
+  top: 200px; }
+  .tip_content p {
+    margin-bottom: 0; }
+  .tip_content h6 {
+    margin-bottom: 0px; }
+  .tip_content ul {
+    padding-bottom: 0;
+    border: 1px solid #666666;
+    padding: 15px; }
+    .tip_content ul ul {
+      border: none;
+      padding: 0px;
+      padding-bottom: 15px; }
+      .tip_content ul ul li {
+        list-style: url("../images/icon_flecha.gif") outside;
+        margin-left: 15px; }
+      .tip_content ul ul.mail {
+        padding-bottom: 0; }
+  .tip_content .close {
+    cursor: pointer;
+    float: right; }
+
+.tip_content_fix {
+  background: none repeat scroll 0 0 #f3f3f3;
+  display: none;
+  position: absolute;
+  margin-top: -45px;
+  margin-left: -300px;
+  width: 280px; }
+  .tip_content_fix .tipy {
+    position: absolute;
+    width: 90%;
+    text-align: right;
+    background: transparent !important;
+    display: table;
+    margin-top: -11px;
+    right: -20px; }
+  .tip_content_fix p {
+    margin-bottom: 0; }
+  .tip_content_fix h6 {
+    margin-bottom: 0px; }
+  .tip_content_fix ul {
+    padding-bottom: 0;
+    border: 1px solid #666666;
+    padding: 15px; }
+    .tip_content_fix ul ul {
+      border: none;
+      padding: 0px;
+      padding-bottom: 15px; }
+      .tip_content_fix ul ul li {
+        list-style: circle outside;
+        margin-left: 15px; }
+      .tip_content_fix ul ul.mail {
+        padding-bottom: 0; }
+  .tip_content_fix .close {
+    cursor: pointer;
+    float: right; }
+
+.tip_content_help {
+  background: none repeat scroll 0 0 #f3f3f3;
+  border: 1px solid #666666;
+  margin-left: 236px;
+  margin-top: 72px;
+  padding: 15px;
+  display: none;
+  position: absolute;
+  width: 300px; }
+  .tip_content_help p {
+    margin-bottom: 0; }
+  .tip_content_help h6 {
+    margin-bottom: 0px; }
+  .tip_content_help ul {
+    padding-bottom: 0; }
+    .tip_content_help ul ul {
+      padding-bottom: 15px; }
+      .tip_content_help ul ul.mail {
+        padding-bottom: 0; }
+  .tip_content_help .tipy {
+    position: absolute;
+    width: 90%;
+    text-align: center;
+    background: transparent !important;
+    display: table;
+    margin-top: -36px; }
+  .tip_content_help .close {
+    cursor: pointer;
+    float: right; }
+
+.help {
+  float: left; }
+
+#logof {
+  font-size: 30px;
+  font-variant: small-caps;
+  font-weight: bold;
+  margin-bottom: 10px; }
+  #logof img {
+    width: 300px; }
+
+.black {
+  color: #000000 !important; }
+
+.error {
+  background: none repeat scroll 0 0 #FFDADA;
+  border: 1px dashed #990000; }
+  .error h1 {
+    color: #990000; }
+
+.message {
+  color: #BC0000;
+  margin-bottom: 0;
+  text-align: center; }
+
+.ui-state-error {
+  background: #BC0000; }
+
+.center {
+  text-align: center; }
+
+.ayuda_medio_pago {
+  position: absolute; }
+
+/**********************************************/
+/**************   FORMULARIOS	***************/
+/**********************************************/
+form div.auth_error {
+  color: #C25D60;
+  font-size: 0.9em; }
+
+.veriseal {
+  display: block;
+  height: 100px;
+  padding: 0 186px; }
+
+a.edit {
+  display: inline;
+  background: url(../images/pago/ico_edit.jpg) no-repeat 6px 10px;
+  display: inline-block;
+  height: 30px;
+  text-indent: 30px;
+  color: #335998;
+  font-size: 12px; }
+
+a.edit:hover {
+  color: #BC0000; }
+
+.error_messages {
+  background: #FFDCDC;
+  color: #bc0000;
+  border: 1px dashed #BC0000;
+  padding: 10px; }
+  .error_messages h2 {
+    display: none; }
+
+#pago .error_messages li {
+  background: #FFDCDC;
+  height: auto; }
+
+.field_with_errors {
+  background: #FFDCDC;
+  border: 1px dashed #BC0000;
+  color: #bc0000;
+  float: left; }
+
+/* parche para boton */
+#Acceder.btn_ir {
+  width: 25px;
+  height: 25px;
+  float: left;
+  background: url(/images/btn_ir.png) 0 0 no-repeat;
+  cursor: pointer;
+  border: none;
+  font-size: 0px; }
+
+#Acceder.btn_ir:hover {
+  background-position: 0 -25px; }
